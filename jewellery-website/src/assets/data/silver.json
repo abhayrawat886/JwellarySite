@@ -1,0 +1,22 @@
+[
+    {
+        "id": 201,
+        "name": "Silver Puja Thali Set",
+        "description": "Complete sterling silver puja thali set with divine engravings.",
+        "price": "₹25,000",
+        "priceNumeric": 25000,
+        "bestSelling": 1,
+        "category": "Silver",
+        "image": "item2.jpg"
+    },
+    {
+        "id": 202,
+        "name": "Hand-Engraved Silver Jug",
+        "description": "Luxury silver jug featuring floral patterns, ideal for heritage homes.",
+        "price": "₹92,000",
+        "priceNumeric": 92000,
+        "bestSelling": 2,
+        "category": "Silver",
+        "image": "item4.jpg"
+    }
+]

@@ -73,7 +73,7 @@
 
         <div class="cta-section">
           <p>Want to know more about our latest collections?</p>
-          <router-link to="/" class="cta-btn">View Our Gallery</router-link>
+          <router-link to="/collections" class="cta-btn">View Our Gallery</router-link>
         </div>
       </div>
     </section>

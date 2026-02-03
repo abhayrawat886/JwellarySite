@@ -23,18 +23,18 @@
             <h3>Quick Links</h3>
             <ul>
               <li><router-link to="/">Dashboard</router-link></li>
+              <li><router-link to="/collections">Collections</router-link></li>
               <li><router-link to="/about">About Us</router-link></li>
-              <li><a href="#">Collections</a></li>
-              <li><a href="#">New Arrivals</a></li>
+              <li><router-link :to="{ path: '/collections', query: { tab: 'new-arrivals' }}">New Arrivals</router-link></li>
             </ul>
           </div>
           <div class="links-column">
             <h3>Categories</h3>
             <ul>
-              <li><a href="#">Gold Jewellery</a></li>
-              <li><a href="#">Diamond Items</a></li>
-              <li><a href="#">Silver Articles</a></li>
-              <li><a href="#">Giftings</a></li>
+              <li><router-link :to="{ path: '/collections', query: { tab: 'gold' }}">Gold Jewellery</router-link></li>
+              <li><router-link :to="{ path: '/collections', query: { tab: 'diamond' }}">Diamond Items</router-link></li>
+              <li><router-link :to="{ path: '/collections', query: { tab: 'silver' }}">Silver Articles</router-link></li>
+              <li><router-link :to="{ path: '/collections', query: { tab: 'gifting' }}">Giftings</router-link></li>
             </ul>
           </div>
         </div>

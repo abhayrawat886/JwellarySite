@@ -28,6 +28,7 @@
 
       <nav class="nav" :class="{ 'nav-open': isMenuOpen }">
         <router-link to="/" class="nav-item" active-class="active">Dashboard</router-link>
+        <router-link to="/collections" class="nav-item" active-class="active">Collections</router-link>
         <router-link to="/about" class="nav-item" active-class="active">About</router-link>
       </nav>
     </div>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 401,
+        "name": "Silver Coin Gift Box",
+        "description": "99.9% pure silver coin beautifully packed in a premium gift box.",
+        "price": "₹5,500",
+        "priceNumeric": 5500,
+        "bestSelling": 1,
+        "category": "Gifting",
+        "image": "item2.jpg"
+    },
+    {
+        "id": 402,
+        "name": "Luxury Gold Chain Gift Set",
+        "description": "Minimalist gold chain perfect for birthdays and anniversaries.",
+        "price": "₹65,000",
+        "priceNumeric": 65000,
+        "bestSelling": 2,
+        "category": "Gifting",
+        "image": "item7.jpg"
+    }
+]

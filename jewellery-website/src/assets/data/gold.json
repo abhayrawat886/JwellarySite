@@ -1,0 +1,22 @@
+[
+    {
+        "id": 101,
+        "name": "Classic Gold Haram Necklace",
+        "description": "Long traditional gold Haram with intricate peacock motifs and semi-precious stones.",
+        "price": "₹4,25,000",
+        "priceNumeric": 425000,
+        "bestSelling": 1,
+        "category": "Gold",
+        "image": "item1.jpg"
+    },
+    {
+        "id": 102,
+        "name": "Temple Work Gold Bangles",
+        "description": "Exquisite temple work bangles in 22K gold, handcrafted by master artisans of Surat.",
+        "price": "₹1,85,000",
+        "priceNumeric": 185000,
+        "bestSelling": 2,
+        "category": "Gold",
+        "image": "item6.jpg"
+    }
+]

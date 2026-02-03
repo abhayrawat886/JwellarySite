@@ -78,5 +78,105 @@
         "bestSelling": 8,
         "category": "Silver",
         "image": "item8.jpg"
+    },
+    {
+        "id": 101,
+        "name": "Classic Gold Haram Necklace",
+        "description": "Long traditional gold Haram with intricate peacock motifs and semi-precious stones.",
+        "price": "₹4,25,000",
+        "priceNumeric": 425000,
+        "bestSelling": 1,
+        "category": "Gold",
+        "image": "item1.jpg"
+    },
+    {
+        "id": 102,
+        "name": "Temple Work Gold Bangles",
+        "description": "Exquisite temple work bangles in 22K gold, handcrafted by master artisans of Surat.",
+        "price": "₹1,85,000",
+        "priceNumeric": 185000,
+        "bestSelling": 2,
+        "category": "Gold",
+        "image": "item6.jpg"
+    },
+    {
+        "id": 201,
+        "name": "Silver Puja Thali Set",
+        "description": "Complete sterling silver puja thali set with divine engravings.",
+        "price": "₹25,000",
+        "priceNumeric": 25000,
+        "bestSelling": 1,
+        "category": "Silver",
+        "image": "item2.jpg"
+    },
+    {
+        "id": 202,
+        "name": "Hand-Engraved Silver Jug",
+        "description": "Luxury silver jug featuring floral patterns, ideal for heritage homes.",
+        "price": "₹92,000",
+        "priceNumeric": 92000,
+        "bestSelling": 2,
+        "category": "Silver",
+        "image": "item4.jpg"
+    },
+    {
+        "id": 301,
+        "name": "Diamond Solitaire Pendant",
+        "description": "Brilliant-cut diamond solitaire set in 18K white gold.",
+        "price": "₹1,50,000",
+        "priceNumeric": 150000,
+        "bestSelling": 1,
+        "category": "Diamond",
+        "image": "item3.jpg"
+    },
+    {
+        "id": 302,
+        "name": "Baguette Cut Diamond Earrings",
+        "description": "Unique baguette cut diamond earrings for modern elegance.",
+        "price": "₹2,10,000",
+        "priceNumeric": 210000,
+        "bestSelling": 2,
+        "category": "Diamond",
+        "image": "item5.jpg"
+    },
+    {
+        "id": 401,
+        "name": "Silver Coin Gift Box",
+        "description": "99.9% pure silver coin beautifully packed in a premium gift box.",
+        "price": "₹5,500",
+        "priceNumeric": 5500,
+        "bestSelling": 1,
+        "category": "Gifting",
+        "image": "item2.jpg"
+    },
+    {
+        "id": 402,
+        "name": "Luxury Gold Chain Gift Set",
+        "description": "Minimalist gold chain perfect for birthdays and anniversaries.",
+        "price": "₹65,000",
+        "priceNumeric": 65000,
+        "bestSelling": 2,
+        "category": "Gifting",
+        "image": "item7.jpg"
+    },
+    {
+        "id": 501,
+        "name": "Modern Fusion Necklace",
+        "description": "A blend of traditional gold and contemporary diamond accents.",
+        "price": "₹2,75,000",
+        "priceNumeric": 275000,
+        "bestSelling": 1,
+        "category": "New Arrivals",
+        "image": "item1.jpg"
+    },
+    {
+        "id": 502,
+        "name": "Geometric Silver Bracelet",
+        "description": "Latest minimalist design in sterling silver.",
+        "price": "₹15,000",
+        "priceNumeric": 15000,
+        "bestSelling": 2,
+        "category": "New Arrivals",
+        "image": "item8.jpg"
     }
 ]

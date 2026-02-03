@@ -1,0 +1,22 @@
+[
+    {
+        "id": 301,
+        "name": "Diamond Solitaire Pendant",
+        "description": "Brilliant-cut diamond solitaire set in 18K white gold.",
+        "price": "₹1,50,000",
+        "priceNumeric": 150000,
+        "bestSelling": 1,
+        "category": "Diamond",
+        "image": "item3.jpg"
+    },
+    {
+        "id": 302,
+        "name": "Baguette Cut Diamond Earrings",
+        "description": "Unique baguette cut diamond earrings for modern elegance.",
+        "price": "₹2,10,000",
+        "priceNumeric": 210000,
+        "bestSelling": 2,
+        "category": "Diamond",
+        "image": "item5.jpg"
+    }
+]
