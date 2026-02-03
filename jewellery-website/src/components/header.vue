@@ -4,12 +4,6 @@
       <div class="logo" @click="goToDashboard">
         <div class="logo-wrapper">
           <div class="logo-icon">
-            <!-- <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-bg">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" opacity="0.2"/>
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg> -->
             <span class="short-name">RJ</span>
           </div>
           <div class="logo-text">
@@ -19,7 +13,20 @@
         </div>
       </div>
 
-      <nav class="nav">
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" @click="toggleMenu" :aria-expanded="isMenuOpen">
+        <svg v-if="!isMenuOpen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg v-else viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="nav" :class="{ 'nav-open': isMenuOpen }">
         <router-link to="/" class="nav-item" active-class="active">Dashboard</router-link>
         <router-link to="/about" class="nav-item" active-class="active">About</router-link>
       </nav>
@@ -28,12 +35,23 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
+const closeMenu = () => {
+  isMenuOpen.value = false
+}
 
 const goToDashboard = () => {
   router.push('/')
+  closeMenu()
 }
 </script>
 
@@ -50,16 +68,17 @@ const goToDashboard = () => {
 }
 
 .container {
-  max-width: 1400px;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
   cursor: pointer;
   transition: opacity 0.2s ease;
+  z-index: 1001;
 
   &:hover {
     opacity: 0.9;
@@ -80,14 +99,7 @@ const goToDashboard = () => {
     justify-content: center;
     color: #d4af37; // Metallic 
     border-radius: 50%;
-    overflow: hidden;
     border: 2px solid #d4af37;
-
-    .icon-bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
 
     .short-name {
       font-family: 'Outfit', sans-serif;
@@ -115,6 +127,21 @@ const goToDashboard = () => {
     .jwellers {
       color: #ffffff; // White
     }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+  
+  svg {
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -164,17 +191,52 @@ const goToDashboard = () => {
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
+@media (max-width: 1200px) {
+  .menu-toggle {
+    display: block;
   }
-  
+
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background: #0a0a0a;
+    flex-direction: column;
+    padding: 6rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(212, 175, 55, 0.1);
+    display: none;
+
+    &.nav-open {
+      right: 0;
+      display: flex;
+    }
+
+    .nav-item {
+      font-size: 1.1rem;
+      width: 100%;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+      &::after {
+        left: 0;
+        transform: none;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
   .logo-text {
     font-size: 1.2rem;
   }
   
-  .nav {
-    gap: 1.2rem;
+  .container {
+    padding: 0 1.5rem;
   }
 }
 </style>

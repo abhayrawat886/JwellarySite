@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Gold Necklace - Traditional Craftsmanship",
+        "description": "Exquisite 22K gold necklace featuring intricate traditional designs and hand-polished finish.",
+        "price": "₹1,25,000",
+        "priceNumeric": 125000,
+        "bestSelling": 3,
+        "category": "Gold",
+        "image": "item1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Silver Ganesha Idol - Divine Pooja Collection",
+        "description": "Pure silver Ganesha idol, handcrafted with stunning detail for your home sanctuary.",
+        "price": "₹45,000",
+        "priceNumeric": 45000,
+        "bestSelling": 1,
+        "category": "Silver",
+        "image": "item2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Diamond Solitaire Ring - Eternal Love",
+        "description": "Dazzling 1-carat diamond solitaire ring set in premium platinum band.",
+        "price": "₹2,50,000",
+        "priceNumeric": 250000,
+        "bestSelling": 5,
+        "category": "Diamond",
+        "image": "item3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Silver Jug Set - Luxury Dining",
+        "description": "Hand-engraved silver jug with matching glasses, perfect for royal dining experiences.",
+        "price": "₹82,000",
+        "priceNumeric": 82000,
+        "bestSelling": 2,
+        "category": "Silver",
+        "image": "item4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Emerald & Diamond Earrings",
+        "description": "Stunning emerald drop earrings surrounded by a halo of brilliant-cut diamonds.",
+        "price": "₹1,85,000",
+        "priceNumeric": 185000,
+        "bestSelling": 6,
+        "category": "Diamond",
+        "image": "item5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Gold Bangle Set - Heritage Series",
+        "description": "Set of 4 traditional gold bangles with antique finish and Ruby stone embellishments.",
+        "price": "₹3,10,000",
+        "priceNumeric": 310000,
+        "bestSelling": 4,
+        "category": "Gold",
+        "image": "item6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Luxury Gold Chain",
+        "description": "Classic 24K gold chain with a modern lobster claw clasp.",
+        "price": "₹95,000",
+        "priceNumeric": 95000,
+        "bestSelling": 7,
+        "category": "Gold",
+        "image": "item7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Silver Bracelet - Minimalist",
+        "description": "Sleek sterling silver bracelet, perfect for everyday wear.",
+        "price": "₹12,000",
+        "priceNumeric": 12000,
+        "bestSelling": 8,
+        "category": "Silver",
+        "image": "item8.jpg"
+    }
+]

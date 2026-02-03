@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import Header from "./components/header.vue"
+import Footer from "./components/footer.vue"
+import WhatsAppButton from "./components/WhatsAppButton.vue"
 </script>
 
 <template>
@@ -8,6 +10,8 @@ import Header from "./components/header.vue"
     <main>
       <router-view />
     </main>
+    <Footer />
+    <WhatsAppButton />
   </div>
 </template>
 

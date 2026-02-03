@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeDashboard from '../components/homeDashboard.vue'
 import About from '../components/about.vue'
+import ProductDetail from '../views/collections/ProductDetail.vue'
 
 const routes = [
     {
@@ -12,12 +13,20 @@ const routes = [
         path: '/about',
         name: 'About',
         component: About
+    },
+    {
+        path: '/collections/:id',
+        name: 'ProductDetail',
+        component: ProductDetail
     }
 ]
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        return { top: 0, behavior: 'smooth' }
+    }
 })
 
 export default router
