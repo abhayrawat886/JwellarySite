@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Header from "./components/header.vue"
-import Footer from "./components/footer.vue"
+import Header from "./components/Header.vue"
+import Footer from "./components/Footer.vue"
 import WhatsAppButton from "./components/WhatsAppButton.vue"
 </script>
 

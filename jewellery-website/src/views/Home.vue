@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import HomeDashboard from "../components/homeDashboard.vue"
+import HomeDashboard from "../components/HomeDashboard.vue"
 </script>
