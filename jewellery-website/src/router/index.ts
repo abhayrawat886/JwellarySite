@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeDashboard from '../components/HomeDashboard.vue'
 import About from '../components/About.vue'
 import ProductDetail from '../views/collections/ProductDetail.vue'
@@ -28,7 +28,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes,
     scrollBehavior() {
         return { top: 0, behavior: 'smooth' }
