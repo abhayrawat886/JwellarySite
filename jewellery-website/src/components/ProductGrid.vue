@@ -4,17 +4,34 @@
       <div class="view-as">
         <span class="label">VIEW AS</span>
         <div class="control-icons">
+          <!-- Grid View Icon -->
           <button 
-            v-for="n in 4" 
-            :key="n" 
-            :class="['grid-btn', { active: currentGrid === n }]"
-            @click="setGrid(n)"
-            :title="`Show ${n} columns`"
+            :class="['grid-btn', { active: currentGrid === 4 }]"
+            @click="setGrid(4)"
+            title="Grid View"
           >
-            <!-- Vertical lines representing grid columns -->
-            <div class="lines-wrapper">
-              <span v-for="i in n" :key="i" class="line"></span>
-            </div>
+            <svg class="view-icon" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+            </svg>
+          </button>
+          
+          <!-- List View Icon -->
+          <button 
+            :class="['grid-btn', { active: currentGrid === 1 }]"
+            @click="setGrid(1)"
+            title="List View"
+          >
+            <svg class="view-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg>
           </button>
         </div>
       </div>
@@ -167,28 +184,22 @@ const sortedProducts = computed(() => {
   min-width: 40px;
   height: 40px;
 
-  .lines-wrapper {
-    display: flex;
-    gap: 2px;
-    height: 16px;
-    
-    .line {
-      width: 4px;
-      height: 100%;
-      background: #ccc;
-      display: inline-block;
-    }
+  .view-icon {
+    width: 20px;
+    height: 20px;
+    color: #ccc;
+    transition: all 0.2s ease;
   }
 
   &:hover {
     border-color: #d4af37;
-    .line { background: #d4af37; }
+    .view-icon { color: #d4af37; }
   }
 
   &.active {
     background: #000;
     border-color: #000;
-    .line { background: #fff; }
+    .view-icon { color: #fff; }
   }
 }
 
