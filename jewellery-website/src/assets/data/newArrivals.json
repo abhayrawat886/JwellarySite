@@ -18,5 +18,205 @@
         "bestSelling": 2,
         "category": "New Arrivals",
         "image": "item8.jpg"
+    },
+    {
+        "id": 503,
+        "name": "Cyberpunk Gold Ring",
+        "description": "Futuristic design in 22K gold with neon-style engraving.",
+        "price": "₹38,000",
+        "priceNumeric": 38000,
+        "bestSelling": 3,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 504,
+        "name": "Minimalist Silver Choker",
+        "description": "Ultra-sleek silver choker for a sharp, modern look.",
+        "price": "₹12,500",
+        "priceNumeric": 12500,
+        "bestSelling": 4,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 505,
+        "name": "Neo-Traditional Diamond Set",
+        "description": "Classic elements reimagined for the contemporary woman.",
+        "price": "₹4,10,000",
+        "priceNumeric": 410000,
+        "bestSelling": 5,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 506,
+        "name": "Abstract Art Silver Cuff",
+        "description": "Unique cuff bracelet inspired by modern abstract sculpture.",
+        "price": "₹26,000",
+        "priceNumeric": 26000,
+        "bestSelling": 6,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 507,
+        "name": "Smart Gold Bracelet",
+        "description": "High-tech integration in a beautiful solid gold bracelet.",
+        "price": "₹95,000",
+        "priceNumeric": 95000,
+        "bestSelling": 7,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 508,
+        "name": "Sustainable Silver Earrings",
+        "description": "Ethically sourced materials in a timeless designer package.",
+        "price": "₹9,800",
+        "priceNumeric": 9800,
+        "bestSelling": 8,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 509,
+        "name": "3D Printed Diamond Pendant",
+        "description": "Intricate geometry only possible with advanced 3D printing.",
+        "price": "₹72,000",
+        "priceNumeric": 72000,
+        "bestSelling": 9,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 510,
+        "name": "Kinetic Gold Necklace",
+        "description": "Interactive design with moving gold elements.",
+        "price": "₹1,85,000",
+        "priceNumeric": 185000,
+        "bestSelling": 10,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 511,
+        "name": "Raw Gemstone Silver Ring",
+        "description": "Unpolished, natural beauty set in a rugged silver frame.",
+        "price": "₹14,500",
+        "priceNumeric": 14500,
+        "bestSelling": 11,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 512,
+        "name": "Futuristic Diamond Band",
+        "description": "Structural design featuring floating diamonds.",
+        "price": "₹2,20,000",
+        "priceNumeric": 220000,
+        "bestSelling": 12,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 513,
+        "name": "Organic Shape Silver Brooch",
+        "description": "Inspired by the fluid lines of nature's formations.",
+        "price": "₹11,000",
+        "priceNumeric": 11000,
+        "bestSelling": 13,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 514,
+        "name": "Mixed Metal Gold Chain",
+        "description": "Striking combination of yellow, white, and rose gold.",
+        "price": "₹68,000",
+        "priceNumeric": 68000,
+        "bestSelling": 14,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 515,
+        "name": "Silver Watch Collection",
+        "description": "Jewelry-grade silver timepiece with a Swiss movement.",
+        "price": "₹55,000",
+        "priceNumeric": 55000,
+        "bestSelling": 15,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 516,
+        "name": "Bio-Metric Gold Locket",
+        "description": "Secure locket that opens with your touch.",
+        "price": "₹1,25,000",
+        "priceNumeric": 125000,
+        "bestSelling": 16,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 517,
+        "name": "Holographic Diamond Earrings",
+        "description": "Diamonds cut to create unique holographic light displays.",
+        "price": "₹3,40,000",
+        "priceNumeric": 340000,
+        "bestSelling": 17,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 518,
+        "name": "Textured Silver Band",
+        "description": "Multi-dimensional texture for a sophisticated hand accessory.",
+        "price": "₹7,500",
+        "priceNumeric": 7500,
+        "bestSelling": 18,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 519,
+        "name": "Sculptural Gold Ear Cuffs",
+        "description": "No piercing required for these architectural gold pieces.",
+        "price": "₹32,000",
+        "priceNumeric": 32000,
+        "bestSelling": 19,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 520,
+        "name": "Intertwined Silver Ring",
+        "description": "Symbol of connection with three flowing silver bands.",
+        "price": "₹5,800",
+        "priceNumeric": 5800,
+        "bestSelling": 20,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 521,
+        "name": "Celestial Diamond Necklace",
+        "description": "Map of the constellations in brilliant-cut diamonds.",
+        "price": "₹5,25,000",
+        "priceNumeric": 525000,
+        "bestSelling": 21,
+        "category": "New Arrivals",
+        "image": ""
+    },
+    {
+        "id": 522,
+        "name": "Urban Chic Gold Set",
+        "description": "Bold and industrial design for city life.",
+        "price": "₹2,10,000",
+        "priceNumeric": 210000,
+        "bestSelling": 22,
+        "category": "New Arrivals",
+        "image": ""
     }
 ]

@@ -18,5 +18,205 @@
         "bestSelling": 2,
         "category": "Diamond",
         "image": "item5.jpg"
+    },
+    {
+        "id": 303,
+        "name": "Diamond Halo Ring",
+        "description": "Stunning diamond halo ring with a center brilliant-cut diamond.",
+        "price": "₹2,75,000",
+        "priceNumeric": 275000,
+        "bestSelling": 3,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 304,
+        "name": "Blue Sapphire & Diamond Ring",
+        "description": "Ornate ring featuring a deep blue sapphire surrounded by diamonds.",
+        "price": "₹3,50,000",
+        "priceNumeric": 350000,
+        "bestSelling": 4,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 305,
+        "name": "Diamond Tennis Bracelet",
+        "description": "Classic diamond tennis bracelet set in 14K white gold.",
+        "price": "₹4,25,000",
+        "priceNumeric": 425000,
+        "bestSelling": 5,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 306,
+        "name": "Marquise Cut Diamond Earrings",
+        "description": "Elegant marquise cut diamond earrings with a drop design.",
+        "price": "₹1,85,000",
+        "priceNumeric": 185000,
+        "bestSelling": 6,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 307,
+        "name": "Diamond Eternity Band",
+        "description": "Sparkling diamond eternity band with continuous brilliant-cut diamonds.",
+        "price": "₹2,10,000",
+        "priceNumeric": 210000,
+        "bestSelling": 7,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 308,
+        "name": "Floating Diamond Necklace",
+        "description": "Minimalist necklace with a floating diamond pendant.",
+        "price": "₹95,000",
+        "priceNumeric": 95000,
+        "bestSelling": 8,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 309,
+        "name": "Black Diamond Studs",
+        "description": "Modern black diamond studs for a bold and sophisticated look.",
+        "price": "₹75,000",
+        "priceNumeric": 75000,
+        "bestSelling": 9,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 310,
+        "name": "Diamond Infinity Pendant",
+        "description": "Diamond-studded infinity pendant symbolizing eternal love.",
+        "price": "₹65,000",
+        "priceNumeric": 65000,
+        "bestSelling": 10,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 311,
+        "name": "Cushion Cut Diamond Ring",
+        "description": "Vintage-inspired cushion cut diamond ring with ornate detailing.",
+        "price": "₹3,95,000",
+        "priceNumeric": 395000,
+        "bestSelling": 11,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 312,
+        "name": "Diamond Cluster Brooch",
+        "description": "Luxury diamond cluster brooch for formal occasions.",
+        "price": "₹1,55,000",
+        "priceNumeric": 155000,
+        "bestSelling": 12,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 313,
+        "name": "Pave Set Diamond Bangle",
+        "description": "Wide gold bangle with pave set diamonds for maximum sparkle.",
+        "price": "₹5,20,000",
+        "priceNumeric": 520000,
+        "bestSelling": 13,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 314,
+        "name": "Diamond Cross Pendant",
+        "description": "Traditional diamond cross pendant in 18K white gold.",
+        "price": "₹82,000",
+        "priceNumeric": 82000,
+        "bestSelling": 14,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 315,
+        "name": "Pear Shaped Diamond Ring",
+        "description": "Elegant pear shaped diamond ring with a halo of smaller diamonds.",
+        "price": "₹2,85,000",
+        "priceNumeric": 285000,
+        "bestSelling": 15,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 316,
+        "name": "Diamond Star Studs",
+        "description": "Playful diamond star studs for a whimsical touch.",
+        "price": "₹45,000",
+        "priceNumeric": 45000,
+        "bestSelling": 16,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 317,
+        "name": "Ruby & Diamond Necklace",
+        "description": "Stunning necklace featuring vibrant rubies and sparkling diamonds.",
+        "price": "₹6,50,000",
+        "priceNumeric": 650000,
+        "bestSelling": 17,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 318,
+        "name": "Diamond Nose Stud",
+        "description": "Dainty diamond nose stud for a touch of elegance.",
+        "price": "₹12,500",
+        "priceNumeric": 12500,
+        "bestSelling": 18,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 319,
+        "name": "Heart Shaped Diamond Pendant",
+        "description": "Romantic heart shaped diamond pendant in rose gold.",
+        "price": "₹58,000",
+        "priceNumeric": 58000,
+        "bestSelling": 19,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 320,
+        "name": "Oval Diamond Engagement Ring",
+        "description": "Classic oval diamond engagement ring with a side stone band.",
+        "price": "₹3,25,000",
+        "priceNumeric": 325000,
+        "bestSelling": 20,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 321,
+        "name": "Princess Cut Diamond Set",
+        "description": "Complete diamond jewelry set with princess cut diamonds.",
+        "price": "₹8,50,000",
+        "priceNumeric": 850000,
+        "bestSelling": 21,
+        "category": "Diamond",
+        "image": ""
+    },
+    {
+        "id": 322,
+        "name": "Diamond Cufflinks - Luxury",
+        "description": "Premium diamond-set cufflinks for the modern man.",
+        "price": "₹1,25,000",
+        "priceNumeric": 125000,
+        "bestSelling": 22,
+        "category": "Diamond",
+        "image": ""
     }
 ]

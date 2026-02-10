@@ -18,5 +18,215 @@
         "bestSelling": 2,
         "category": "Gold",
         "image": "item6.jpg"
+    },
+    {
+        "id": 103,
+        "name": "Temple Work Gold Bangles",
+        "description": "Exquisite temple work bangles in 22K gold, handcrafted by master artisans of Surat.",
+        "price": "₹1,85,000",
+        "priceNumeric": 185000,
+        "bestSelling": 2,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 104,
+        "name": "Antique Gold Choker",
+        "description": "Elegant gold choker with vintage detailing and a regal finish.",
+        "price": "₹2,15,000",
+        "priceNumeric": 215000,
+        "bestSelling": 3,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 105,
+        "name": "Traditional Jhumkas",
+        "description": "Classic gold jhumkas featuring intricate carvings and dangling pearls.",
+        "price": "₹85,000",
+        "priceNumeric": 85000,
+        "bestSelling": 4,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 106,
+        "name": "Bridal Gold Set",
+        "description": "Grand gold necklace and earring set designed for the modern bride.",
+        "price": "₹5,50,000",
+        "priceNumeric": 550000,
+        "bestSelling": 5,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 107,
+        "name": "Gold Coin Necklace",
+        "description": "Traditional Lakshmi coin necklace in pure 22K gold.",
+        "price": "₹1,25,000",
+        "priceNumeric": 125000,
+        "bestSelling": 6,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 108,
+        "name": "Filigree Gold Ring",
+        "description": "Delicate gold ring with handcrafted filigree patterns.",
+        "price": "₹35,000",
+        "priceNumeric": 35000,
+        "bestSelling": 7,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 109,
+        "name": "Temple Design Waistbelt",
+        "description": "Traditional gold Vaddanam (waistbelt) with divine motifs.",
+        "price": "₹3,75,000",
+        "priceNumeric": 375000,
+        "bestSelling": 8,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 110,
+        "name": "Handcrafted Gold Kadas",
+        "description": "Pair of solid gold kadas with antique finish and Ruby accents.",
+        "price": "₹2,45,000",
+        "priceNumeric": 245000,
+        "bestSelling": 9,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 111,
+        "name": "Modern Gold Studs",
+        "description": "Minimalist gold ear studs perfect for daily professional wear.",
+        "price": "₹15,000",
+        "priceNumeric": 15000,
+        "bestSelling": 10,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 112,
+        "name": "Pearl Embedded Gold Set",
+        "description": "Stunning gold necklace set adorned with premium sea pearls.",
+        "price": "₹2,95,000",
+        "priceNumeric": 295000,
+        "bestSelling": 11,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 113,
+        "name": "Ruby Gold Mangalsutra",
+        "description": "Contemporary gold mangalsutra with a centered ruby stone.",
+        "price": "₹65,000",
+        "priceNumeric": 65000,
+        "bestSelling": 12,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 114,
+        "name": "Emerald Gold Pendant",
+        "description": "Exquisite gold pendant featuring a large teardrop emerald.",
+        "price": "₹45,000",
+        "priceNumeric": 45000,
+        "bestSelling": 13,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 115,
+        "name": "Gold Chain with Cross",
+        "description": "Simple yet elegant gold chain featuring a polished gold cross.",
+        "price": "₹32,000",
+        "priceNumeric": 32000,
+        "bestSelling": 14,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 116,
+        "name": "Intricate Gold Anklet",
+        "description": "Hand-forged gold anklet with delicate charms and bells.",
+        "price": "₹55,000",
+        "priceNumeric": 55000,
+        "bestSelling": 15,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 117,
+        "name": "Rose Gold Bracelet",
+        "description": "Modern rose gold bracelet with a sleek, polished finish.",
+        "price": "₹78,000",
+        "priceNumeric": 78000,
+        "bestSelling": 16,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 118,
+        "name": "Matte Finish Gold Bangles",
+        "description": "Set of 4 gold bangles with a unique contemporary matte texture.",
+        "price": "₹1,60,000",
+        "priceNumeric": 160000,
+        "bestSelling": 17,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 119,
+        "name": "Gold Nose Pin - Traditional",
+        "description": "Classic gold nose pin with a tiny sparkling diamond accent.",
+        "price": "₹8,500",
+        "priceNumeric": 8500,
+        "bestSelling": 18,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 120,
+        "name": "Peacock Motif Gold Earrings",
+        "description": "Artistic gold earrings inspired by the majestic peacock.",
+        "price": "₹92,000",
+        "priceNumeric": 92000,
+        "bestSelling": 19,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 121,
+        "name": "Gold Layered Necklace",
+        "description": "Trendy triple-layered gold necklace for a chic modern look.",
+        "price": "₹1,40,000",
+        "priceNumeric": 140000,
+        "bestSelling": 20,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 122,
+        "name": "Diamond Cut Gold Band",
+        "description": "Precision diamond-cut gold band with incredible light reflection.",
+        "price": "₹28,000",
+        "priceNumeric": 28000,
+        "bestSelling": 21,
+        "category": "Gold",
+        "image": ""
+    },
+    {
+        "id": 123,
+        "name": "Floral Gold Maang Tikka",
+        "description": "Elegant gold maang tikka with floral designs for festive events.",
+        "price": "₹42,000",
+        "priceNumeric": 42000,
+        "bestSelling": 22,
+        "category": "Gold",
+        "image": ""
     }
 ]

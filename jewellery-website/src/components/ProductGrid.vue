@@ -57,7 +57,10 @@
         @click="goToDetail(product.id)"
       >
         <div class="image-wrapper">
-          <img :src="getImageUrl(product.image)" :alt="product.name" />
+          <img v-if="product.image" :src="getImageUrl(product.image)" :alt="product.name" />
+          <div v-else class="letter-placeholder">
+            <span>{{ (product.category || 'P').charAt(0).toUpperCase() }}</span>
+          </div>
           <div class="wishlist-btn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -266,6 +269,20 @@ const sortedProducts = computed(() => {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    .letter-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      color: #d4af37;
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+      text-transform: uppercase;
     }
 
     .wishlist-btn {

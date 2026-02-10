@@ -18,5 +18,205 @@
         "bestSelling": 2,
         "category": "Gifting",
         "image": "item7.jpg"
+    },
+    {
+        "id": 403,
+        "name": "Anniversary Gift Box",
+        "description": "Premium gift set with a gold pendant and matching earrings.",
+        "price": "₹1,25,000",
+        "priceNumeric": 125000,
+        "bestSelling": 3,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 404,
+        "name": "Birthday Gold Bead",
+        "description": "Personalized gold bead for a collectible charm bracelet.",
+        "price": "₹12,000",
+        "priceNumeric": 12000,
+        "bestSelling": 4,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 405,
+        "name": "Wedding Silver Spoon",
+        "description": "Traditional silver spoon for wedding rituals, elegantly engraved.",
+        "price": "₹4,500",
+        "priceNumeric": 4500,
+        "bestSelling": 5,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 406,
+        "name": "Corporate Silver Coin",
+        "description": "Perfect corporate gift: a pure silver coin with custom embossing.",
+        "price": "₹6,200",
+        "priceNumeric": 6200,
+        "bestSelling": 6,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 407,
+        "name": "Baby's First Gold Ring",
+        "description": "Dainty gold ring designed for infants, safe and stylish.",
+        "price": "₹8,500",
+        "priceNumeric": 8500,
+        "bestSelling": 7,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 408,
+        "name": "Mother's Day Diamond Pendant",
+        "description": "Heart-shaped diamond pendant to show your love and appreciation.",
+        "price": "₹42,000",
+        "priceNumeric": 42000,
+        "bestSelling": 8,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 409,
+        "name": "Valentine's Silver Heart",
+        "description": "Sleek silver heart locket, perfect for a romantic gesture.",
+        "price": "₹7,800",
+        "priceNumeric": 7800,
+        "bestSelling": 9,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 410,
+        "name": "Graduation Gold Pen",
+        "description": "Gold-plated luxury pen to celebrate a significant academic milestone.",
+        "price": "₹18,000",
+        "priceNumeric": 18000,
+        "bestSelling": 10,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 411,
+        "name": "Retirement Silver Statue",
+        "description": "Artistic silver statue commemorating years of dedicated service.",
+        "price": "₹35,000",
+        "priceNumeric": 35000,
+        "bestSelling": 11,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 412,
+        "name": "Diwali Gold Lantern",
+        "description": "Decorative gold-plated miniature lantern for festive gifting.",
+        "price": "₹9,500",
+        "priceNumeric": 9500,
+        "bestSelling": 12,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 413,
+        "name": "Christmas Star Diamond",
+        "description": "Diamond-encrusted star ornament for the tree or as a pendant.",
+        "price": "₹28,000",
+        "priceNumeric": 28000,
+        "bestSelling": 13,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 414,
+        "name": "New Year's Silver Medal",
+        "description": "Inspirational silver medal to kick off the new year with success.",
+        "price": "₹5,800",
+        "priceNumeric": 5800,
+        "bestSelling": 14,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 415,
+        "name": "Housewarming Gold Idol",
+        "description": "Gold-plated Ganesha idol for bringing prosperity to a new home.",
+        "price": "₹15,500",
+        "priceNumeric": 15500,
+        "bestSelling": 15,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 416,
+        "name": "Rakhi Special Silver Set",
+        "description": "Pure silver Rakhi and a small thali for the festival of siblings.",
+        "price": "₹4,200",
+        "priceNumeric": 4200,
+        "bestSelling": 16,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 417,
+        "name": "Gold Band for Gifting",
+        "description": "Simple and elegant gold band, ideal for any special occasion.",
+        "price": "₹22,000",
+        "priceNumeric": 22000,
+        "bestSelling": 17,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 418,
+        "name": "Bridal Shower Diamond Pin",
+        "description": "Delicate diamond brooch for the bride-to-be.",
+        "price": "₹16,500",
+        "priceNumeric": 16500,
+        "bestSelling": 18,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 419,
+        "name": "Christening Silver Cross",
+        "description": "Classic silver cross necklace for religious milestones.",
+        "price": "₹10,500",
+        "priceNumeric": 10500,
+        "bestSelling": 19,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 420,
+        "name": "Personalized Silver Tag",
+        "description": "Sterling silver tag with custom engraving for a unique personal gift.",
+        "price": "₹3,500",
+        "priceNumeric": 3500,
+        "bestSelling": 20,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 421,
+        "name": "Luxury Gifting Hamper - Gold",
+        "description": "Curated hamper featuring gold coins, traditional sweets, and more.",
+        "price": "₹2,50,000",
+        "priceNumeric": 250000,
+        "bestSelling": 21,
+        "category": "Gifting",
+        "image": ""
+    },
+    {
+        "id": 422,
+        "name": "Surprise Diamond Box",
+        "description": "A mysterious gift box containing a surprise diamond jewelry piece.",
+        "price": "₹85,000",
+        "priceNumeric": 85000,
+        "bestSelling": 22,
+        "category": "Gifting",
+        "image": ""
     }
 ]

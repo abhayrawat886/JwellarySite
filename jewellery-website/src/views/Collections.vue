@@ -25,18 +25,36 @@
     <div class="tab-content">
       <div class="container">
         <!-- Reusing ProductGrid concept but with local tab data -->
-        <div class="grid-container">
-          <div v-for="product in currentProducts" :key="product.id" class="product-card" @click="goToDetail(product.id)">
-            <div class="image-wrapper">
-              <img :src="getImageUrl(product.image)" :alt="product.name" />
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">{{ product.name }}</h3>
-              <p class="product-description">{{ product.description }}</p>
-              <p class="product-price">{{ product.price }}</p>
+        <div class="slider-wrapper">
+          <button class="slider-nav prev" @click="scrollSlider('left')" aria-label="Scroll Left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="grid-container" ref="sliderRef">
+            <div v-for="product in currentProducts" :key="product.id" class="product-card" @click="goToDetail(product.id)">
+              <div class="image-wrapper">
+                <img v-if="product.image" :src="getImageUrl(product.image)" :alt="product.name" />
+                <div v-else class="letter-placeholder">
+                  <span>{{ (product.category || 'P').charAt(0).toUpperCase() }}</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">{{ product.name }}</h3>
+                <p class="product-description">{{ product.description }}</p>
+                <p class="product-price">{{ product.price }}</p>
+              </div>
             </div>
           </div>
+
+          <button class="slider-nav next" @click="scrollSlider('right')" aria-label="Scroll Right">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
         </div>
+        
         <div v-if="currentProducts.length === 0" class="no-products">
           No products found in this category.
         </div>
@@ -59,6 +77,16 @@ import newArrivalsData from '../assets/data/newArrivals.json'
 const router = useRouter()
 const route = useRoute()
 const activeTab = ref('gold')
+const sliderRef = ref(null)
+
+const scrollSlider = (direction) => {
+  if (!sliderRef.value) return
+  const scrollAmount = sliderRef.value.clientWidth * 0.8
+  sliderRef.value.scrollBy({
+    left: direction === 'left' ? -scrollAmount : scrollAmount,
+    behavior: 'smooth'
+  })
+}
 
 const tabs = [
   { id: 'gold', name: 'Gold Jewellery', data: goldData },
@@ -206,17 +234,109 @@ onMounted(() => {
   padding: 4rem 0;
 }
 
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 39%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  color: #d4af37;
+  overflow: visible; // Allows pulse ring to show
+
+  &.prev { left: 25px; }
+  &.next { right: 25px; }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid #d4af37;
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #d4af37;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: -1;
+  }
+
+  &:hover {
+    color: white;
+    border-color: #d4af37;
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+    transform: translateY(-50%) scale(1.05);
+
+    &::before {
+      inset: -10px;
+      opacity: 0;
+      animation: pulse 1.5s infinite;
+    }
+
+    &::after {
+      transform: scale(1);
+    }
+  }
+
+  svg {
+    width: 26px;
+    height: 26px;
+    transition: all 0.4s ease;
+  }
+
+  &.prev:hover svg { transform: translateX(-4px); }
+  &.next:hover svg { transform: translateX(4px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   gap: 2.5rem;
-  padding: 0px 20px; 
+  padding: 20px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .product-card {
   background: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex: 0 0 280px;
   
   &:hover {
     transform: translateY(-10px);
@@ -235,6 +355,20 @@ onMounted(() => {
       height: 100%;
       object-fit: cover;
       transition: transform 0.5s ease;
+    }
+
+    .letter-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      color: #d4af37;
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+      text-transform: uppercase;
     }
   }
 

@@ -18,5 +18,205 @@
         "bestSelling": 2,
         "category": "Silver",
         "image": "item4.jpg"
+    },
+    {
+        "id": 203,
+        "name": "Sterling Silver Anklets",
+        "description": "Delicate sterling silver anklets with traditional bells.",
+        "price": "₹12,000",
+        "priceNumeric": 12000,
+        "bestSelling": 3,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 204,
+        "name": "Oxidized Silver Necklace",
+        "description": "Vintage style oxidized silver necklace with tribal patterns.",
+        "price": "₹18,500",
+        "priceNumeric": 18500,
+        "bestSelling": 4,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 205,
+        "name": "Silver Toe Rings",
+        "description": "Set of two silver toe rings with floral designs.",
+        "price": "₹2,500",
+        "priceNumeric": 2500,
+        "bestSelling": 5,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 206,
+        "name": "Silver Tea Set",
+        "description": "Luxury sterling silver tea set for fine dining.",
+        "price": "₹1,45,000",
+        "priceNumeric": 145000,
+        "bestSelling": 6,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 207,
+        "name": "Modern Silver Cuff",
+        "description": "Sleek and minimalist silver cuff bracelet.",
+        "price": "₹22,000",
+        "priceNumeric": 22000,
+        "bestSelling": 7,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 208,
+        "name": "Silver Pooja Bell",
+        "description": "Handcrafted silver bell with detailed Nandi motif.",
+        "price": "₹8,500",
+        "priceNumeric": 8500,
+        "bestSelling": 8,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 209,
+        "name": "Miniature Silver Idol",
+        "description": "Exquisitely detailed small Ganesha idol in pure silver.",
+        "price": "₹15,000",
+        "priceNumeric": 15000,
+        "bestSelling": 9,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 210,
+        "name": "Silver Bookmark Gift",
+        "description": "Elegant silver bookmark, perfect for literature lovers.",
+        "price": "₹3,200",
+        "priceNumeric": 3200,
+        "bestSelling": 10,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 211,
+        "name": "Polished Silver Spoon Set",
+        "description": "Set of 6 silver spoons with an antique finish.",
+        "price": "₹28,000",
+        "priceNumeric": 28000,
+        "bestSelling": 11,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 212,
+        "name": "Silver Photo Frame",
+        "description": "Sterling silver photo frame with classic beaded border.",
+        "price": "₹12,500",
+        "priceNumeric": 12500,
+        "bestSelling": 12,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 213,
+        "name": "Geometric Silver Earrings",
+        "description": "Modern geometric design earrings in sterling silver.",
+        "price": "₹6,800",
+        "priceNumeric": 6800,
+        "bestSelling": 13,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 214,
+        "name": "Silver Curb Chain",
+        "description": "Durable silver curb chain with a heavy-duty clasp.",
+        "price": "₹14,500",
+        "priceNumeric": 14500,
+        "bestSelling": 14,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 215,
+        "name": "Tribal Silver Bracelet",
+        "description": "Hand-forged tribal bracelet with unique patterns.",
+        "price": "₹9,200",
+        "priceNumeric": 9200,
+        "bestSelling": 15,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 216,
+        "name": "Silver Candle Stand",
+        "description": "Stately silver candle stand for elegant home decor.",
+        "price": "₹24,000",
+        "priceNumeric": 24000,
+        "bestSelling": 16,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 217,
+        "name": "Hammered Silver Ring",
+        "description": "Contemporary hammered texture silver ring.",
+        "price": "₹4,500",
+        "priceNumeric": 4500,
+        "bestSelling": 17,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 218,
+        "name": "Silver Lotus Lamp",
+        "description": "Exquisite silver Diya in the shape of a lotus.",
+        "price": "₹18,000",
+        "priceNumeric": 18000,
+        "bestSelling": 18,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 219,
+        "name": "Butterfly Silver Pendant",
+        "description": "Playful silver pendant featuring a delicate butterfly.",
+        "price": "₹5,200",
+        "priceNumeric": 5200,
+        "bestSelling": 19,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 220,
+        "name": "Silver Hair Accessory",
+        "description": "Traditional silver hair pin with floral accents.",
+        "price": "₹7,500",
+        "priceNumeric": 7500,
+        "bestSelling": 20,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 221,
+        "name": "Vintage Silver Brooch",
+        "description": "Elegant silver brooch with a vintageVictorian design.",
+        "price": "₹8,800",
+        "priceNumeric": 8800,
+        "bestSelling": 21,
+        "category": "Silver",
+        "image": ""
+    },
+    {
+        "id": 222,
+        "name": "Silver Keyring - Premium",
+        "description": "Solid silver keyring with a customizable tag.",
+        "price": "₹3,800",
+        "priceNumeric": 3800,
+        "bestSelling": 22,
+        "category": "Silver",
+        "image": ""
     }
 ]
