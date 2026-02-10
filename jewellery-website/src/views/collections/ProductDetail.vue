@@ -142,7 +142,7 @@ const whatsappLink = computed(() => {
   return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 })
 
-const formLink = 'https://docs.google.com/forms/d/YOUR_FORM_ID/viewform'
+const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSdNQfttPMmAwN9htwFUKNaqIUPbXgjeYT6BWzgmO_Sw-lkjGA/viewform?usp=publish-editor'
 
 onMounted(() => {
   const productId = parseInt(route.params.id)
