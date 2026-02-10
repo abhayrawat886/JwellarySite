@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <!-- Hamburger Menu Button -->
+      <!-- Hamburger Menu Button (visible below 1200px) -->
       <button class="menu-toggle" @click="toggleMenu" :aria-expanded="isMenuOpen">
         <svg v-if="!isMenuOpen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -26,21 +26,32 @@
         </svg>
       </button>
 
-      <nav class="nav" :class="{ 'nav-open': isMenuOpen }">
-        <router-link to="/" class="nav-item" active-class="active">Dashboard</router-link>
-        <router-link to="/collections" class="nav-item" active-class="active">Collections</router-link>
-        <router-link to="/about" class="nav-item" active-class="active">About</router-link>
-      </nav>
+      <!-- Desktop Navigation (hidden below 1200px) -->
+      <DesktopNavigation class="desktop-nav-container" />
+
+      <!-- Mobile Navigation (visible below 1200px when toggled) -->
+      <MobileNavigation :isOpen="isMenuOpen" @close="closeMenu" />
     </div>
   </header>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import DesktopNavigation from './DesktopNavigation.vue'
+import MobileNavigation from './MobileNavigation.vue'
 
 const router = useRouter()
 const isMenuOpen = ref(false)
+
+// Watch isMenuOpen - if false, ensure any sub-states are reset (handled in components)
+watch(isMenuOpen, (newValue) => {
+  console.log('Menu status changed:', newValue)
+})
+
+onMounted(() => {
+  console.log('Header Mounted. Initial Menu State:', isMenuOpen.value)
+})
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -61,7 +72,7 @@ const goToDashboard = () => {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #050505; // Deep black
+  background: #050505;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -98,7 +109,7 @@ const goToDashboard = () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #d4af37; // Metallic 
+    color: #d4af37;
     border-radius: 50%;
     border: 2px solid #d4af37;
 
@@ -121,13 +132,8 @@ const goToDashboard = () => {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 
-    .rennu {
-      color: #d4af37; // Gold
-    }
-
-    .jwellers {
-      color: #ffffff; // White
-    }
+    .rennu { color: #d4af37; }
+    .jwellers { color: #ffffff; }
   }
 }
 
@@ -138,7 +144,7 @@ const goToDashboard = () => {
   color: #ffffff;
   cursor: pointer;
   padding: 0.5rem;
-  z-index: 1001;
+  z-index: 2001;
   
   svg {
     width: 28px;
@@ -146,88 +152,13 @@ const goToDashboard = () => {
   }
 }
 
-.nav {
-  display: flex;
-  gap: 2.5rem;
-
-  .nav-item {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    transition: all 0.3s ease;
-    padding: 0.5rem 0;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background: #d4af37;
-      transition: all 0.3s ease;
-      transform: translateX(-50%);
-    }
-
-    &:hover {
-      color: #ffffff;
-      
-      &::after {
-        width: 100%;
-      }
-    }
-
-    &.active {
-      color: #d4af37;
-      
-      &::after {
-        width: 100%;
-        background: #d4af37;
-      }
-    }
-  }
-}
-
+// Show toggle below 1200px
 @media (max-width: 1200px) {
   .menu-toggle {
     display: block;
   }
-
-  .nav {
-    position: fixed;
-    top: 0;
-    width: 280px;
-    height: 100vh;
-    background: #0a0a0a;
-    flex-direction: column;
-    padding: 6rem 2rem 2rem;
-    gap: 1.5rem;
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(212, 175, 55, 0.1);
+  .desktop-nav-container {
     display: none;
-
-    &.nav-open {
-      right: 0;
-      display: flex;
-    }
-
-    .nav-item {
-      font-size: 1.1rem;
-      width: 100%;
-      padding: 1rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-
-      &::after {
-        left: 0;
-        transform: none;
-        bottom: 0;
-      }
-    }
   }
 }
 
@@ -235,7 +166,6 @@ const goToDashboard = () => {
   .logo-text {
     font-size: 1.2rem;
   }
-  
   .container {
     padding: 0 1.5rem;
   }
