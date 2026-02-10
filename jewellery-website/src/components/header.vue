@@ -30,7 +30,7 @@
       <DesktopNavigation class="desktop-nav-container" />
 
       <!-- Mobile Navigation (visible below 1200px when toggled) -->
-      <MobileNavigation :isOpen="isMenuOpen" @close="closeMenu" />
+      <MobileNavigation v-if="isMenuOpen" :isOpen="isMenuOpen" @close="closeMenu" />
     </div>
   </header>
 </template>
