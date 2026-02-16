@@ -7,6 +7,7 @@
         "priceNumeric": 125000,
         "bestSelling": 3,
         "category": "Gold",
+        "type": "Necklaces",
         "image": "item1.jpg"
     },
     {
@@ -17,6 +18,7 @@
         "priceNumeric": 45000,
         "bestSelling": 1,
         "category": "Silver",
+        "type": "Others",
         "image": "item2.jpg"
     },
     {
@@ -27,6 +29,7 @@
         "priceNumeric": 250000,
         "bestSelling": 5,
         "category": "Diamond",
+        "type": "Rings",
         "image": "item3.jpg"
     },
     {
@@ -37,6 +40,7 @@
         "priceNumeric": 82000,
         "bestSelling": 2,
         "category": "Silver",
+        "type": "Others",
         "image": "item4.jpg"
     },
     {
@@ -47,6 +51,7 @@
         "priceNumeric": 185000,
         "bestSelling": 6,
         "category": "Diamond",
+        "type": "Earrings",
         "image": "item5.jpg"
     },
     {
@@ -57,6 +62,7 @@
         "priceNumeric": 310000,
         "bestSelling": 4,
         "category": "Gold",
+        "type": "Bangles & Bracelets",
         "image": "item6.jpg"
     },
     {
@@ -67,6 +73,7 @@
         "priceNumeric": 95000,
         "bestSelling": 7,
         "category": "Gold",
+        "type": "Chains",
         "image": "item7.jpg"
     },
     {
@@ -77,6 +84,7 @@
         "priceNumeric": 12000,
         "bestSelling": 8,
         "category": "Silver",
+        "type": "Bangles & Bracelets",
         "image": "item8.jpg"
     },
     {
@@ -87,6 +95,7 @@
         "priceNumeric": 425000,
         "bestSelling": 1,
         "category": "Gold",
+        "type": "Necklaces",
         "image": "item1.jpg"
     },
     {
@@ -97,6 +106,7 @@
         "priceNumeric": 185000,
         "bestSelling": 2,
         "category": "Gold",
+        "type": "Bangles & Bracelets",
         "image": "item6.jpg"
     },
     {
@@ -107,6 +117,7 @@
         "priceNumeric": 25000,
         "bestSelling": 1,
         "category": "Silver",
+        "type": "Others",
         "image": "item2.jpg"
     },
     {
@@ -117,6 +128,7 @@
         "priceNumeric": 92000,
         "bestSelling": 2,
         "category": "Silver",
+        "type": "Others",
         "image": "item4.jpg"
     },
     {
@@ -127,6 +139,7 @@
         "priceNumeric": 150000,
         "bestSelling": 1,
         "category": "Diamond",
+        "type": "Necklaces",
         "image": "item3.jpg"
     },
     {
@@ -137,6 +150,7 @@
         "priceNumeric": 210000,
         "bestSelling": 2,
         "category": "Diamond",
+        "type": "Earrings",
         "image": "item5.jpg"
     },
     {
@@ -147,6 +161,7 @@
         "priceNumeric": 5500,
         "bestSelling": 1,
         "category": "Gifting",
+        "type": "Others",
         "image": "item2.jpg"
     },
     {
@@ -157,6 +172,7 @@
         "priceNumeric": 65000,
         "bestSelling": 2,
         "category": "Gifting",
+        "type": "Chains",
         "image": "item7.jpg"
     },
     {
@@ -167,6 +183,7 @@
         "priceNumeric": 275000,
         "bestSelling": 1,
         "category": "New Arrivals",
+        "type": "Necklaces",
         "image": "item1.jpg"
     },
     {
@@ -177,6 +194,7 @@
         "priceNumeric": 15000,
         "bestSelling": 2,
         "category": "New Arrivals",
+        "type": "Bangles & Bracelets",
         "image": "item8.jpg"
     }
 ]

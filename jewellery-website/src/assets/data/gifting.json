@@ -7,6 +7,7 @@
         "priceNumeric": 5500,
         "bestSelling": 1,
         "category": "Gifting",
+        "type": "Others",
         "image": "item2.jpg"
     },
     {
@@ -17,6 +18,7 @@
         "priceNumeric": 65000,
         "bestSelling": 2,
         "category": "Gifting",
+        "type": "Chains",
         "image": "item7.jpg"
     },
     {
@@ -27,6 +29,7 @@
         "priceNumeric": 125000,
         "bestSelling": 3,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -37,6 +40,7 @@
         "priceNumeric": 12000,
         "bestSelling": 4,
         "category": "Gifting",
+        "type": "Bangles & Bracelets",
         "image": ""
     },
     {
@@ -47,6 +51,7 @@
         "priceNumeric": 4500,
         "bestSelling": 5,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -57,6 +62,7 @@
         "priceNumeric": 6200,
         "bestSelling": 6,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -67,6 +73,7 @@
         "priceNumeric": 8500,
         "bestSelling": 7,
         "category": "Gifting",
+        "type": "Rings",
         "image": ""
     },
     {
@@ -77,6 +84,7 @@
         "priceNumeric": 42000,
         "bestSelling": 8,
         "category": "Gifting",
+        "type": "Necklaces",
         "image": ""
     },
     {
@@ -87,6 +95,7 @@
         "priceNumeric": 7800,
         "bestSelling": 9,
         "category": "Gifting",
+        "type": "Necklaces",
         "image": ""
     },
     {
@@ -97,6 +106,7 @@
         "priceNumeric": 18000,
         "bestSelling": 10,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -107,6 +117,7 @@
         "priceNumeric": 35000,
         "bestSelling": 11,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -117,6 +128,7 @@
         "priceNumeric": 9500,
         "bestSelling": 12,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -127,6 +139,7 @@
         "priceNumeric": 28000,
         "bestSelling": 13,
         "category": "Gifting",
+        "type": "Necklaces",
         "image": ""
     },
     {
@@ -137,6 +150,7 @@
         "priceNumeric": 5800,
         "bestSelling": 14,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -147,6 +161,7 @@
         "priceNumeric": 15500,
         "bestSelling": 15,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -157,6 +172,7 @@
         "priceNumeric": 4200,
         "bestSelling": 16,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -167,6 +183,7 @@
         "priceNumeric": 22000,
         "bestSelling": 17,
         "category": "Gifting",
+        "type": "Rings",
         "image": ""
     },
     {
@@ -177,6 +194,7 @@
         "priceNumeric": 16500,
         "bestSelling": 18,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -187,6 +205,7 @@
         "priceNumeric": 10500,
         "bestSelling": 19,
         "category": "Gifting",
+        "type": "Necklaces",
         "image": ""
     },
     {
@@ -197,6 +216,7 @@
         "priceNumeric": 3500,
         "bestSelling": 20,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -207,6 +227,7 @@
         "priceNumeric": 250000,
         "bestSelling": 21,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     },
     {
@@ -217,6 +238,7 @@
         "priceNumeric": 85000,
         "bestSelling": 22,
         "category": "Gifting",
+        "type": "Others",
         "image": ""
     }
 ]
