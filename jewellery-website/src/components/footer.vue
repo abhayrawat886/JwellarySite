@@ -98,7 +98,7 @@
 </template>
 
 <script setup>
-import renuJwellAdress from  '@\assets\images\renuJwellAdress.png';
+import renuJwellAdress from  '../assets/images/renuJwellAdress.png';
 </script>
 
 <style scoped lang="scss">
