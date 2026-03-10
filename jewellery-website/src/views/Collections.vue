@@ -1,9 +1,11 @@
 <template>
   <div class="collections-page">
-    <div class="collections-header" :class="{ compact: isCompact }">
-      <div class="container">
-        <h1>{{ activeCollectionName }}</h1>
-        <p>Discover our exclusive {{ activeCollectionName.toLowerCase() }} pieces crafted with perfection.</p>
+    <div class="collections-header" :class="{ compact: isCompact }" :style="headerBgStyle">
+      <div class="container header-inner">
+        <div class="header-text">
+          <h1>{{ activeCollectionName }}</h1>
+          <p>Discover our exclusive {{ activeCollectionName.toLowerCase() }} pieces crafted with perfection.</p>
+        </div>
       </div>
     </div>
     
@@ -69,6 +71,13 @@ import diamondData from '../assets/data/diamond.json'
 import giftingData from '../assets/data/gifting.json'
 import newArrivalsData from '../assets/data/newArrivals.json'
 
+// Load dynamic background images
+import bgGold from '../assets/images/collections_right_bg.png'
+import bgSilver from '../assets/images/collections_silver_bg.png'
+import bgDiamond from '../assets/images/collections_diamond_bg.png'
+import bgGifting from '../assets/images/collections_gifting_bg.png'
+import bgNewArrivals from '../assets/images/collections_new_arrivals_bg.png'
+
 // Fixed subcategories as requested
 const displayCategories = [
   'Necklaces',
@@ -90,11 +99,11 @@ const handleScroll = () => {
 }
 
 const tabs = [
-  { id: 'gold', name: 'Gold Jewellery', data: goldData },
-  { id: 'silver', name: 'Silver Jewellery', data: silverData },
-  { id: 'diamond', name: 'Diamond Jewellery', data: diamondData },
-  { id: 'gifting', name: 'Gifting Products', data: giftingData },
-  { id: 'new-arrivals', name: 'New Arrivals', data: newArrivalsData }
+  { id: 'gold', name: 'Gold Jewellery', data: goldData, bg: bgGold },
+  { id: 'silver', name: 'Silver Jewellery', data: silverData, bg: bgSilver },
+  { id: 'diamond', name: 'Diamond Jewellery', data: diamondData, bg: bgDiamond },
+  { id: 'gifting', name: 'Gifting Products', data: giftingData, bg: bgGifting },
+  { id: 'new-arrivals', name: 'New Arrivals', data: newArrivalsData, bg: bgNewArrivals }
 ]
 
 const activeCollection = computed(() => {
@@ -103,6 +112,15 @@ const activeCollection = computed(() => {
 
 const activeCollectionName = computed(() => {
   return activeCollection.value.name
+})
+
+const headerBgStyle = computed(() => {
+  return {
+    backgroundImage: `linear-gradient(rgba(5, 5, 5, 0.6), rgba(5, 5, 5, 0.85)), url(${activeCollection.value.bg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }
 })
 
 const currentProducts = computed(() => {
@@ -167,18 +185,35 @@ onUnmounted(() => {
 }
 
 .header-spacer.compact {
-  height: 193px;
+  height: 310px;
 }
 
 .collections-header {
-  background: #050505;
+  background-color: #050505; // Fallback
   color: #fff;
-  padding: 5rem 0;
-  text-align: center;
+  padding: 5rem 3rem;
   position: sticky;
   top: 70px;
   z-index: 101;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+
+  .header-inner {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
 
   h1 {
     font-size: 3rem;
@@ -197,7 +232,7 @@ onUnmounted(() => {
   }
 
   &.compact {
-    padding: 1rem 0;
+    padding: 1rem 3rem;
     h1 {
       font-size: 1.5rem;
       margin-bottom: 0;
@@ -364,6 +399,16 @@ onUnmounted(() => {
 @media (max-width: 768px) {
   .collections-header {
     top: 60px;
+    padding: 3rem 1.5rem;
+
+    .header-text {
+      width: 100%;
+      text-align: center;
+    }
+
+    &.compact {
+      padding: 1rem 1.5rem;
+    }
   }
   .subcategory-tabs-container {
     top: 120px;

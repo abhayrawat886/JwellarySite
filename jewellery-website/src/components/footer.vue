@@ -9,7 +9,7 @@
           <!-- <div class="logo-icon">
             <span class="short-name">RJ</span>
           </div> -->
-          <img :src="logo2" alt="Rennu Jwellers Logo" class="custom-logo-img" />
+          <img :src="logo4" alt="Rennu Jwellers Logo" class="custom-logo-img" />
           <div class="logo-text">
             <span class="rennu">Rennu</span>
             <span class="jwellers">Jwellers</span>
@@ -106,6 +106,8 @@
 <script setup>
 import renuJwellAdress from  '../assets/images/renuJwellAdress.png';
 import logo2 from '../assets/images/transparentRJL.png';
+import logo4 from '../assets/images/newlogo.jpeg'
+
 </script>
 
 <style scoped lang="scss">

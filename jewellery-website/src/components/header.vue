@@ -6,7 +6,7 @@
           <!-- <div class="logo-icon">
             <span class="short-name">RJ</span>
           </div> -->
-          <img :src="logo2" alt="Rennu Jwellers Logo" class="custom-logo-img" />
+          <img :src="logo4" alt="Rennu Jwellers Logo" class="custom-logo-img" />
           <div class="logo-text">
             <span class="rennu">Rennu</span>
             <span class="jwellers">Jwellers</span>
@@ -45,6 +45,7 @@ import MobileNavigation from './MobileNavigation.vue'
 import logo1 from '../assets/images/level1RJL.png'
 import logo2 from '../assets/images/transparentRJL.png'
 import logo3 from '../assets/images/level2TransparentRJL.png'
+import logo4 from '../assets/images/newlogo.jpeg'
 
 
 const router = useRouter()
