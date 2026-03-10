@@ -1,22 +1,25 @@
 <template>
   <div class="collections-page">
-    <div class="collections-header">
+    <div class="collections-header" :class="{ compact: isCompact }">
       <div class="container">
         <h1>{{ activeCollectionName }}</h1>
         <p>Discover our exclusive {{ activeCollectionName.toLowerCase() }} pieces crafted with perfection.</p>
       </div>
     </div>
+    
+    <!-- Spacer prevents the page from jumping when the header shrinks -->
+    <div class="header-spacer" :class="{ compact: isCompact }"></div>
 
     <div class="subcategory-tabs-container" v-if="subCategories.length > 1">
       <div class="container">
         <div class="subcategory-tabs">
-          <button 
+          <!-- <button 
             class="sub-tab-btn" 
             :class="{ active: activeSubCategory === 'All' }"
             @click="activeSubCategory = 'All'"
           >
             All Items
-          </button>
+          </button> -->
           <button 
             v-for="cat in subCategories" 
             :key="cat"
@@ -56,7 +59,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 
 // Load specific JSON files
@@ -66,10 +69,25 @@ import diamondData from '../assets/data/diamond.json'
 import giftingData from '../assets/data/gifting.json'
 import newArrivalsData from '../assets/data/newArrivals.json'
 
+// Fixed subcategories as requested
+const displayCategories = [
+  'Necklaces',
+  'Chains',
+  'Rings',
+  'Earrings',
+  'Bangles & Bracelets',
+  'Others'
+]
+
 const router = useRouter()
 const route = useRoute()
 const activeTab = ref('gold')
-const activeSubCategory = ref('All')
+const activeSubCategory = ref(displayCategories[0])
+const isCompact = ref(false)
+
+const handleScroll = () => {
+  isCompact.value = window.scrollY > 50
+}
 
 const tabs = [
   { id: 'gold', name: 'Gold Jewellery', data: goldData },
@@ -91,15 +109,7 @@ const currentProducts = computed(() => {
   return activeCollection.value.data
 })
 
-// Fixed subcategories as requested
-const displayCategories = [
-  'Necklaces',
-  'Chains',
-  'Rings',
-  'Earrings',
-  'Bangles & Bracelets',
-  'Others'
-]
+
 
 const subCategories = computed(() => displayCategories)
 
@@ -124,7 +134,7 @@ const updateTabFromQuery = () => {
   const tabQuery = route.query.tab
   if (tabQuery && tabs.some(t => t.id === tabQuery)) {
     activeTab.value = tabQuery
-    activeSubCategory.value = 'All' // Reset subcategory on tab change
+    activeSubCategory.value = displayCategories[0] // Reset subcategory on tab change
   }
 }
 
@@ -135,6 +145,11 @@ watch(() => route.query.tab, () => {
 onMounted(() => {
   updateTabFromQuery()
   window.scrollTo(0, 0)
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
@@ -143,6 +158,16 @@ onMounted(() => {
   font-family: 'Outfit', sans-serif;
   min-height: 80vh;
   background: #fdfdfd;
+  overflow-anchor: none;
+}
+
+.header-spacer {
+  height: 0;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-spacer.compact {
+  height: 193px;
 }
 
 .collections-header {
@@ -150,16 +175,38 @@ onMounted(() => {
   color: #fff;
   padding: 5rem 0;
   text-align: center;
+  position: sticky;
+  top: 70px;
+  z-index: 101;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #d4af37;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   p {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 50px;
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  &.compact {
+    padding: 1rem 0;
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+    p {
+      max-height: 0;
+      opacity: 0;
+      margin: 0;
+    }
   }
 }
 
@@ -167,7 +214,7 @@ onMounted(() => {
   background: #fff;
   border-bottom: 1px solid #eee;
   position: sticky;
-  top: 70px;
+  top: 130px;
   z-index: 100;
   padding: 1rem 0;
 
@@ -315,8 +362,11 @@ onMounted(() => {
 }
 
 @media (max-width: 768px) {
-  .subcategory-tabs-container {
+  .collections-header {
     top: 60px;
+  }
+  .subcategory-tabs-container {
+    top: 120px;
     .subcategory-tabs { justify-content: flex-start; }
   }
   .tab-content { padding: 3rem 0; }

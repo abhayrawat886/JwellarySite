@@ -65,7 +65,7 @@
 
             <div class="paragraph-item">
               <h2>Visit Our Showroom</h2>
-              <p>Located at the heart of Surat’s diamond district, we invite you to explore our heritage in person. Visit us at 123 Jewel Street, Diamond District, Mumbai (Regional Office) or our flagship store in Surat. Our doors are always open to those who appreciate the finer things in life. Connect with us today to start your journey into the world of premium jewellery.</p>
+              <p>Located at the heart of Surat’s diamond district, we invite you to explore our heritage in person. Visit us at Shree Rennu Jewellers U-4b, 1st floor, Regent arcade, Nr. Shiv Shakti, Ghod Dod Rd, Surat, Gujarat 395007. Our doors are always open to those who appreciate the finer things in life. Connect with us today to start your journey into the world of premium jewellery. You can also reach us via phone at +91 7863010614 / +91 6395379597 or email us at rennujewellers@gmail.com.</p>
             </div>
           </div>
 
