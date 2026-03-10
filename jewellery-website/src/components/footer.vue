@@ -5,15 +5,16 @@
       <div class="footer-top">
         <!-- Brand / Logo -->
         <div class="footer-brand">
-          <div class="logo-wrapper">
-            <div class="logo-icon">
-              <span class="short-name">RJ</span>
-            </div>
-            <div class="logo-text">
-              <span class="rennu">Rennu</span>
-              <span class="jwellers">Jwellers</span>
-            </div>
+        <div class="logo-wrapper">
+          <!-- <div class="logo-icon">
+            <span class="short-name">RJ</span>
+          </div> -->
+          <img :src="logo2" alt="Rennu Jwellers Logo" class="custom-logo-img" />
+          <div class="logo-text">
+            <span class="rennu">Rennu</span>
+            <span class="jwellers">Jwellers</span>
           </div>
+        </div>
           <p class="brand-slogan">Exquisite Craftsmanship, Timeless Elegance.</p>
           <!-- QR Code Section -->
           <div class="qr-code-wrapper">
@@ -104,6 +105,7 @@
 
 <script setup>
 import renuJwellAdress from  '../assets/images/renuJwellAdress.png';
+import logo2 from '../assets/images/transparentRJL.png';
 </script>
 
 <style scoped lang="scss">
@@ -134,6 +136,13 @@ import renuJwellAdress from  '../assets/images/renuJwellAdress.png';
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
+  }
+
+  .custom-logo-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .logo-icon {

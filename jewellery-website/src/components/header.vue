@@ -3,9 +3,10 @@
     <div class="container">
       <div class="logo" @click="goToDashboard">
         <div class="logo-wrapper">
-          <div class="logo-icon">
+          <!-- <div class="logo-icon">
             <span class="short-name">RJ</span>
-          </div>
+          </div> -->
+          <img :src="logo2" alt="Rennu Jwellers Logo" class="custom-logo-img" />
           <div class="logo-text">
             <span class="rennu">Rennu</span>
             <span class="jwellers">Jwellers</span>
@@ -40,6 +41,11 @@ import { ref, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import DesktopNavigation from './DesktopNavigation.vue'
 import MobileNavigation from './MobileNavigation.vue'
+
+import logo1 from '../assets/images/level1RJL.png'
+import logo2 from '../assets/images/transparentRJL.png'
+import logo3 from '../assets/images/level2TransparentRJL.png'
+
 
 const router = useRouter()
 const isMenuOpen = ref(false)
@@ -100,6 +106,13 @@ const goToDashboard = () => {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+  }
+
+  .custom-logo-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .logo-icon {
