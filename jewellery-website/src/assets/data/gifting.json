@@ -1,244 +1,789 @@
 [
     {
         "id": 401,
-        "name": "Silver Coin Gift Box",
-        "description": "99.9% pure silver coin beautifully packed in a premium gift box.",
-        "price": "₹5,500",
-        "priceNumeric": 5500,
+        "name": "Resin Silver Angel Table Clock",
+        "description": "A masterfully detailed resin silver table clock with sculpted angel figures for timeless elegance.",
         "bestSelling": 1,
         "category": "Gifting",
-        "type": "Others",
-        "image": "item2.jpg"
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_ANGELTABLECLOCK.JPG",
+        "images": [
+            "RESINSILVER_ANGELTABLECLOCK.JPG",
+            "RESINSILVER_ANGEL_TABLECLOCK.JPG",
+            "RESINSILVER_ANGEL_TABLECLOCK_SIDEVIEW.JPG"
+        ]
     },
     {
         "id": 402,
-        "name": "Luxury Gold Chain Gift Set",
-        "description": "Minimalist gold chain perfect for birthdays and anniversaries.",
-        "price": "₹65,000",
-        "priceNumeric": 65000,
+        "name": "Resin Silver Ashtlaxmi Sacred Tortoise",
+        "description": "An auspicious resin silver tortoise embossed with eight forms of Goddess Laxmi for prosperity.",
         "bestSelling": 2,
         "category": "Gifting",
-        "type": "Chains",
-        "image": "item7.jpg"
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_ASHTLAXMI_TORTOISE.JPG",
+        "images": [
+            "RESINSILVER_ASHTLAXMI_TORTOISE.JPG",
+            "RESINSILVER_ASHTLAXMI_TORTOISE(1).JPG"
+        ]
     },
     {
         "id": 403,
-        "name": "Anniversary Gift Box",
-        "description": "Premium gift set with a gold pendant and matching earrings.",
-        "price": "₹1,25,000",
-        "priceNumeric": 125000,
+        "name": "Resin Silver Ashtlaxmi Tulsi Vrindavan",
+        "description": "Intricately crafted divine Tulsi Vrindavan pot adorned with Ashtlaxmi motifs.",
         "bestSelling": 3,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_ASHTLAXMI_TULSIPOT.JPG",
+        "images": [
+            "RESINSILVER_ASHTLAXMI_TULSIPOT.JPG",
+            "RESINSILVER_ASHTLAXMI_TULSIPOT_TOP_VIEW.JPG"
+        ]
     },
     {
         "id": 404,
-        "name": "Birthday Gold Bead",
-        "description": "Personalized gold bead for a collectible charm bracelet.",
-        "price": "₹12,000",
-        "priceNumeric": 12000,
+        "name": "Resin Silver Mother of Pearl Pooja Chowki",
+        "description": "Luxurious Mother of Pearl inlaid resin silver chowki combining divine heritage with pristine art.",
         "bestSelling": 4,
         "category": "Gifting",
-        "type": "Bangles & Bracelets",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_MOP_CHOKI.JPG",
+        "images": [
+            "RESINSILVER_MOP_CHOKI.JPG",
+            "RESINSILVER_MOP_CHOKI1.JPG",
+            "RESINSILVER_MOP_CHOKI(3).JPG",
+            "RESINSILVER_MOPCHOKI_SIDEVIEW.JPG",
+            "RESINSILVER_MOP_CHOKI(1).JPG",
+            "RESINSILVER_MOP_CHOKI(2).JPG"
+        ]
     },
     {
         "id": 405,
-        "name": "Wedding Silver Spoon",
-        "description": "Traditional silver spoon for wedding rituals, elegantly engraved.",
-        "price": "₹4,500",
-        "priceNumeric": 4500,
+        "name": "Resin Silver Round Pooja Chowki",
+        "description": "Elegant round silver chowki with detailed traditional carvings for worship ceremonies.",
         "bestSelling": 5,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_ROUND_CHOKI_SIDE_VIEW.JPG",
+        "images": [
+            "RESINSILVER_ROUND_CHOKI_SIDE_VIEW.JPG",
+            "RESINSILVER_ROUND_CHOKI_TOP_VIEW.JPG"
+        ]
     },
     {
         "id": 406,
-        "name": "Corporate Silver Coin",
-        "description": "Perfect corporate gift: a pure silver coin with custom embossing.",
-        "price": "₹6,200",
-        "priceNumeric": 6200,
+        "name": "Resin Silver Antique Pooja Chowki",
+        "description": "A magnificent handcrafted silver resin chowki designed for sacred rituals and home altars.",
         "bestSelling": 6,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_CHOKI_SIDEVIEW.JPG",
+        "images": [
+            "RESINSILVER_CHOKI_SIDEVIEW.JPG",
+            "RESINSILVER_CHOKI_SIDE_VIEW.JPG"
+        ]
     },
     {
         "id": 407,
-        "name": "Baby's First Gold Ring",
-        "description": "Dainty gold ring designed for infants, safe and stylish.",
-        "price": "₹8,500",
-        "priceNumeric": 8500,
+        "name": "Divine Krishna Face Resin Silver Frame",
+        "description": "Serene depiction of Lord Krishna in a premium resin silver relief frame.",
         "bestSelling": 7,
         "category": "Gifting",
-        "type": "Rings",
-        "image": ""
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_CLADE_KRISHNA_FACE.JPG",
+        "images": [
+            "RESINSILVER_CLADE_KRISHNA_FACE.JPG"
+        ]
     },
     {
         "id": 408,
-        "name": "Mother's Day Diamond Pendant",
-        "description": "Heart-shaped diamond pendant to show your love and appreciation.",
-        "price": "₹42,000",
-        "priceNumeric": 42000,
+        "name": "Divine Shree Ram Face Resin Silver Frame",
+        "description": "Exquisite resin silver wall relief frame highlighting the divine persona of Shree Ram.",
         "bestSelling": 8,
         "category": "Gifting",
-        "type": "Necklaces",
-        "image": ""
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_CLADE_RAM_FACE.JPG",
+        "images": [
+            "RESINSILVER_CLADE_RAM_FACE.JPG"
+        ]
     },
     {
         "id": 409,
-        "name": "Valentine's Silver Heart",
-        "description": "Sleek silver heart locket, perfect for a romantic gesture.",
-        "price": "₹7,800",
-        "priceNumeric": 7800,
+        "name": "Shrinathji Sacred Resin Silver Frame",
+        "description": "Detailed resin silver 3D relief artwork of Lord Shrinathji for sacred home decor.",
         "bestSelling": 9,
         "category": "Gifting",
-        "type": "Necklaces",
-        "image": ""
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_CLADE_SHRINATHJI.JPG",
+        "images": [
+            "RESINSILVER_CLADE_SHRINATHJI.JPG"
+        ]
     },
     {
         "id": 410,
-        "name": "Graduation Gold Pen",
-        "description": "Gold-plated luxury pen to celebrate a significant academic milestone.",
-        "price": "₹18,000",
-        "priceNumeric": 18000,
+        "name": "Khatu Shyam Baba Resin Silver Frame",
+        "description": "Blessing representation of Khatu Shyam Baba rendered in lustrous silver resin finish.",
         "bestSelling": 10,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_CLADE_SHYAM_BABA.JPG",
+        "images": [
+            "RESINSILVER_CLADE_SHYAM_BABA.JPG"
+        ]
     },
     {
         "id": 411,
-        "name": "Retirement Silver Statue",
-        "description": "Artistic silver statue commemorating years of dedicated service.",
-        "price": "₹35,000",
-        "priceNumeric": 35000,
+        "name": "Sitting Radha Krishna Divine Frame",
+        "description": "Artistic silver resin relief capturing the eternal grace of sitting Radha Krishna.",
         "bestSelling": 11,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_CLADE_SITTING_RK.JPG",
+        "images": [
+            "RESINSILVER_CLADE_SITTING_RK.JPG"
+        ]
     },
     {
         "id": 412,
-        "name": "Diwali Gold Lantern",
-        "description": "Decorative gold-plated miniature lantern for festive gifting.",
-        "price": "₹9,500",
-        "priceNumeric": 9500,
+        "name": "Resin Silver Auspicious Coin Kalash",
+        "description": "A symbol of abundance featuring pure silver resin kalash overflowing with coins.",
         "bestSelling": 12,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_COIN_KALASH.JPG",
+        "images": [
+            "RESINSILVER_COIN_KALASH.JPG",
+            "RESINSILVER_COIN_KALASH(1).JPG"
+        ]
     },
     {
         "id": 413,
-        "name": "Christmas Star Diamond",
-        "description": "Diamond-encrusted star ornament for the tree or as a pendant.",
-        "price": "₹28,000",
-        "priceNumeric": 28000,
+        "name": "Resin Silver Sacred Cow Dry Fruit Box",
+        "description": "Ornamental dry fruit box embellished with Kamdhenu cow motifs and fine silver work.",
         "bestSelling": 13,
         "category": "Gifting",
-        "type": "Necklaces",
-        "image": ""
+        "type": "Utility & Box Sets",
+        "image": "RESINSILVER_COW_DRYFRUITBOX.JPG",
+        "images": [
+            "RESINSILVER_COW_DRYFRUITBOX.JPG",
+            "RESINSILVER_COW_DRYFRUITBOX(1).JPG",
+            "RESINSILVER_COW_DRYFRUITBOX_TOP_VIEW.JPG",
+            "RESINSILVER_OPEN_COW_DRYFRUITBOX.JPG"
+        ]
     },
     {
         "id": 414,
-        "name": "New Year's Silver Medal",
-        "description": "Inspirational silver medal to kick off the new year with success.",
-        "price": "₹5,800",
-        "priceNumeric": 5800,
+        "name": "Resin Silver Royal Elephant Candlestand",
+        "description": "Majestic elephant shaped candlestand pair crafted in anti-tarnish resin silver.",
         "bestSelling": 14,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_ELEPHANT_CANDLESTAND.JPG",
+        "images": [
+            "RESINSILVER_ELEPHANT_CANDLESTAND.JPG",
+            "RESINSILVER_ELEPHANT_CANDLESTAND(1).JPG",
+            "RESINSILVER_ELEPHANT_CANDLESTAND(2).JPG"
+        ]
     },
     {
         "id": 415,
-        "name": "Housewarming Gold Idol",
-        "description": "Gold-plated Ganesha idol for bringing prosperity to a new home.",
-        "price": "₹15,500",
-        "priceNumeric": 15500,
+        "name": "Resin Silver Elephant Trunk Table Clock",
+        "description": "Grand table timepiece supported by artistic elephant trunk sculpts in silver polish.",
         "bestSelling": 15,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_ELEPHANT_TRUNK_TABLECLOCK_FRONT_VIEW.JPG",
+        "images": [
+            "RESINSILVER_ELEPHANT_TRUNK_TABLECLOCK_FRONT_VIEW.JPG",
+            "RESINSILVER_ELEPHANT_TRUNK_TABLECLOCK_SIDE_VIEW.JPG"
+        ]
     },
     {
         "id": 416,
-        "name": "Rakhi Special Silver Set",
-        "description": "Pure silver Rakhi and a small thali for the festival of siblings.",
-        "price": "₹4,200",
-        "priceNumeric": 4200,
+        "name": "Resin Silver Flying Swan Dry Fruit Box",
+        "description": "Gracious flying swan sculpted container designed for festive serving and gifting.",
         "bestSelling": 16,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Utility & Box Sets",
+        "image": "RESINSILVER_FLYINGSWAN_DRYFRUITBOX.JPG",
+        "images": [
+            "RESINSILVER_FLYINGSWAN_DRYFRUITBOX.JPG"
+        ]
     },
     {
         "id": 417,
-        "name": "Gold Band for Gifting",
-        "description": "Simple and elegant gold band, ideal for any special occasion.",
-        "price": "₹22,000",
-        "priceNumeric": 22000,
+        "name": "Resin Silver Royal Safa Ganpati Idol",
+        "description": "Charming Ganesha idol wearing traditional turban (Safa) in pristine silver polish.",
         "bestSelling": 17,
         "category": "Gifting",
-        "type": "Rings",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_SAFAGANESHJI.JPG",
+        "images": [
+            "RESINSILVER_SAFAGANESHJI.JPG",
+            "RESINSILVER_SAFAGANPATIJI_SIDE_VIEW.JPG"
+        ]
     },
     {
         "id": 418,
-        "name": "Bridal Shower Diamond Pin",
-        "description": "Delicate diamond brooch for the bride-to-be.",
-        "price": "₹16,500",
-        "priceNumeric": 16500,
+        "name": "Resin Silver Lord Ganesha Idol",
+        "description": "Hand-finished Ganesha idol symbolizing wisdom, prosperity, and auspicious beginnings.",
         "bestSelling": 18,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_GANESH_FRONT_VIEW.JPG",
+        "images": [
+            "RESINSILVER_GANESH_FRONT_VIEW.JPG",
+            "RESINSILVER_GANESH_SIDE_VIEW.JPG"
+        ]
     },
     {
         "id": 419,
-        "name": "Christening Silver Cross",
-        "description": "Classic silver cross necklace for religious milestones.",
-        "price": "₹10,500",
-        "priceNumeric": 10500,
+        "name": "Resin Silver Lord Hanumanji Idol",
+        "description": "Powerful resin silver sculpture of Lord Hanuman radiates strength and devotion.",
         "bestSelling": 19,
         "category": "Gifting",
-        "type": "Necklaces",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_HANUMANJI_FRONT_VIEW.JPG",
+        "images": [
+            "RESINSILVER_HANUMANJI_FRONT_VIEW.JPG",
+            "RESINSILVER_HANUMANJI_FRONT_VIEW(1).JPG",
+            "RESINSILVER_HANUMANJI_SIDE_VIEW.JPG"
+        ]
     },
     {
         "id": 420,
-        "name": "Personalized Silver Tag",
-        "description": "Sterling silver tag with custom engraving for a unique personal gift.",
-        "price": "₹3,500",
-        "priceNumeric": 3500,
+        "name": "Resin Silver Laxmi Ganesh Saraswati Trio",
+        "description": "Holy trinity idol set embodying wealth, intellect, and divine wisdom.",
         "bestSelling": 20,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_LAXMIGANESHSARASWATI.JPG",
+        "images": [
+            "RESINSILVER_LAXMIGANESHSARASWATI.JPG"
+        ]
     },
     {
         "id": 421,
-        "name": "Luxury Gifting Hamper - Gold",
-        "description": "Curated hamper featuring gold coins, traditional sweets, and more.",
-        "price": "₹2,50,000",
-        "priceNumeric": 250000,
+        "name": "Resin Silver Laxmi Ganesh Shankh Vessel",
+        "description": "Auspicious conch shell sculpture featuring carved figures of Goddess Laxmi and Lord Ganesh.",
         "bestSelling": 21,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_LAXMIGANESH_SHANKH.JPG",
+        "images": [
+            "RESINSILVER_LAXMIGANESH_SHANKH.JPG"
+        ]
     },
     {
         "id": 422,
-        "name": "Surprise Diamond Box",
-        "description": "A mysterious gift box containing a surprise diamond jewelry piece.",
-        "price": "₹85,000",
-        "priceNumeric": 85000,
+        "name": "Resin Silver Laxmi Ganesh Blessing Pair",
+        "description": "Beautifully proportioned Laxmi Ganesh idol pair for Diwali pooja and housewarming gifts.",
         "bestSelling": 22,
         "category": "Gifting",
-        "type": "Others",
-        "image": ""
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_LAXMI_GANESH_FRONT_VIEW.JPG",
+        "images": [
+            "RESINSILVER_LAXMI_GANESH_FRONT_VIEW.JPG",
+            "RESINSILVER_LAXMI_GANESH_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 423,
+        "name": "Resin Silver Mini Sacred Kalash Pair",
+        "description": "Miniature ceremonial silver kalash pair crafted for sanctified ritual arrangements.",
+        "bestSelling": 23,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_MINI_KALASH_PAIR.JPG",
+        "images": [
+            "RESINSILVER_MINI_KALASH_PAIR.JPG"
+        ]
+    },
+    {
+        "id": 424,
+        "name": "Resin Silver Om Nariyal Pooja Kalash",
+        "description": "Traditional silver kalash topped with sacred coconut and Om engraving.",
+        "bestSelling": 24,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_OM_NARIYAL_KALASH.JPG",
+        "images": [
+            "RESINSILVER_OM_NARIYAL_KALASH.JPG",
+            "RESINSILVER_OM_NARIYAL_KALASH(1).JPG"
+        ]
+    },
+    {
+        "id": 425,
+        "name": "Resin Silver Om Swastik Decorative Vase",
+        "description": "Luxe floral vase engraved with auspicious Om and Swastik symbols in silver finish.",
+        "bestSelling": 25,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_OM_SWASTIK_VASE.JPG",
+        "images": [
+            "RESINSILVER_OM_SWASTIK_VASE.JPG",
+            "RESINSILVER_OM_SWASTIK_VASE(1).JPG"
+        ]
+    },
+    {
+        "id": 426,
+        "name": "Resin Silver Swan Pair Open Dry Fruit Box",
+        "description": "Charming twin swan decorated dry fruit tray ideal for wedding and celebratory gifts.",
+        "bestSelling": 26,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "RESINSILVER_OPEN_SWANPAIR_DRYFRUITBOX.JPG",
+        "images": [
+            "RESINSILVER_OPEN_SWANPAIR_DRYFRUITBOX.JPG",
+            "RESINSILVER_SWANPAIR_OPEN_DRYFUIRTBOX.JPG"
+        ]
+    },
+    {
+        "id": 427,
+        "name": "Resin Silver Multi-Compartment Dry Fruit Box",
+        "description": "Exquisite openable silver dry fruit box featuring rich embossed traditional patterns.",
+        "bestSelling": 27,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "RESINSILVER_OPEN_DRYFRUITBOX(1).JPG",
+        "images": [
+            "RESINSILVER_OPEN_DRYFRUITBOX(1).JPG",
+            "RESINSILVER_OPEN_DRYFRUITBOX(2).JPG",
+            "RESINSILVER_OPEN_DRYFRUITBOX.JPG",
+            "RESINSILVER_OPEN_DRYFRUIT_BOX.JPG",
+            "RESINSILVER_OPEN_DRYFUITBOX.JPG"
+        ]
+    },
+    {
+        "id": 428,
+        "name": "Resin Silver Decorative Paan Patta Platter",
+        "description": "Ornate betel leaf shaped silver platter designed for ritual offerings and centerpiece decor.",
+        "bestSelling": 28,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_PATTA.JPG",
+        "images": [
+            "RESINSILVER_PATTA.JPG",
+            "RESINSILVER_PATTA_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 429,
+        "name": "Resin Silver Peacock Desk Pen Stand",
+        "description": "Regal peacock sculpture integrated into an executive silver pen holder.",
+        "bestSelling": 29,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_PEACOCK_PENSTAND.JPG",
+        "images": [
+            "RESINSILVER_PEACOCK_PENSTAND.JPG",
+            "RESINSILVER_PEACOCK_PENSTAND(1).JPG",
+            "RESINSILVER_PEACOCK_PENSTAND_TOP_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 430,
+        "name": "Resin Silver Royal Peacock Vase Pair",
+        "description": "Pair of stately peacock embossed silver vases crafted for grand living spaces.",
+        "bestSelling": 30,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_PEACOCK_VASE_PAIR_FRONT_VIEW.JPG",
+        "images": [
+            "RESINSILVER_PEACOCK_VASE_PAIR_FRONT_VIEW.JPG",
+            "RESINSILVER_PEACOCK_VASE_PAIR_TOP_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 431,
+        "name": "Resin Silver Radha Krishna Decorative Vase",
+        "description": "Romantic divine vase adorned with detailed Radha Krishna motifs in silver work.",
+        "bestSelling": 31,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_RK_VASE.JPG",
+        "images": [
+            "RESINSILVER_RK_VASE.JPG",
+            "RESINSILVER_RK_VASE(1).JPG"
+        ]
+    },
+    {
+        "id": 432,
+        "name": "Resin Silver Divine Shankh Artifact",
+        "description": "Authentically detailed sacred conch shell artifact in brilliant silver coating.",
+        "bestSelling": 32,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_SHANKH.JPG",
+        "images": [
+            "RESINSILVER_SHANKH.JPG",
+            "RESINSILVER_SHANKH(1).JPG"
+        ]
+    },
+    {
+        "id": 433,
+        "name": "Resin Silver Sitting Radha Krishna with Cow",
+        "description": "Poetic sculpture depicting Radha Krishna resting with Kamdhenu cow.",
+        "bestSelling": 33,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_SITTING_COWRK.JPG",
+        "images": [
+            "RESINSILVER_SITTING_COWRK.JPG",
+            "RESINSILVER_SITTING_COWRK_FRONT_VIEW.JPG",
+            "RESINSILVER_SITTING_COWRK_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 434,
+        "name": "Resin Silver Sitting Radha Krishna Illuminated LED Frame",
+        "description": "Mesmerizing LED backlit frame showcasing silver resin Radha Krishna artwork.",
+        "bestSelling": 34,
+        "category": "Gifting",
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_SITTING_RK_LED_FRAME.JPG",
+        "images": [
+            "RESINSILVER_SITTING_RK_LED_FRAME.JPG",
+            "RESINSILVER_SITTNG_RK_LED_FRAME1.JPG"
+        ]
+    },
+    {
+        "id": 435,
+        "name": "Resin Silver Dainty Swan Dry Fruit Box",
+        "description": "Compact swan shaped silver box ideal for return gifts and table service.",
+        "bestSelling": 35,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "RESINSILVER_SMALLSWAN_DRYFRUIT_BOX.JPG",
+        "images": [
+            "RESINSILVER_SMALLSWAN_DRYFRUIT_BOX.JPG",
+            "RESINSILVER_SMALLSWAN_DRYFRUIT_BOX_TOP_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 436,
+        "name": "Resin Silver Standing Radha Krishna Sculpture",
+        "description": "Graceful standing posture of divine Radha Krishna captured in radiant silver resin.",
+        "bestSelling": 36,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_STANDINGRK_FRONT_VIEW.JPG",
+        "images": [
+            "RESINSILVER_STANDINGRK_FRONT_VIEW.JPG",
+            "RESINSILVER_STANINDINGRK_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 437,
+        "name": "Resin Silver Standing Parrot Pair Decor",
+        "description": "Artisanal parrot figurine pair symbolizing companionship and natural beauty.",
+        "bestSelling": 37,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_STANDING_PARROT_PAIR.JPG",
+        "images": [
+            "RESINSILVER_STANDING_PARROT_PAIR.JPG",
+            "RESINSILVER_STANDING_PARROT_PAIR(3).JPG",
+            "RESINSILVER_STANDING_PARROT_PAIR(1).JPG",
+            "RESINSILVER_STANDING_PARROT_PAIR(2).JPG"
+        ]
+    },
+    {
+        "id": 438,
+        "name": "Resin Silver Standing Peacock Pair",
+        "description": "Stunning pair of standing peacocks crafted with intricate feather engravings.",
+        "bestSelling": 38,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_STANDING_PEACOCK_PAIR.JPG",
+        "images": [
+            "RESINSILVER_STANDING_PEACOCK_PAIR.JPG",
+            "RESINSILVER_STANDING_PEACOCK_PAIR1.JPG"
+        ]
+    },
+    {
+        "id": 439,
+        "name": "Resin Silver Mother & Baby Swan Pair",
+        "description": "Heartwarming mother and baby swan sculpture in high-luster silver polish.",
+        "bestSelling": 39,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_SWAN_BABYSWAN_PAIR.JPG",
+        "images": [
+            "RESINSILVER_SWAN_BABYSWAN_PAIR.JPG",
+            "RESINSILVER_SWAN_BABYSWAN_PAIR1.JPG"
+        ]
+    },
+    {
+        "id": 440,
+        "name": "Resin Silver Elegant Swan Dry Fruit Box",
+        "description": "Classic swan motif dry fruit storage box crafted for celebratory occasions.",
+        "bestSelling": 40,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "RESINSILVER_SWAN_DRYFRUITBOX.JPG",
+        "images": [
+            "RESINSILVER_SWAN_DRYFRUITBOX.JPG",
+            "RESINSILVER_SWAN_DRYFRUITBOX_FRONT_VIEW.JPG",
+            "RESINSILVER_SWAN_DRYFRUITBOX(1).JPG"
+        ]
+    },
+    {
+        "id": 441,
+        "name": "Resin Silver Love Swan Pair Decor",
+        "description": "Romantic twin swan table accent rendered in fine silver finish.",
+        "bestSelling": 41,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_SWAN_PAIR.JPG",
+        "images": [
+            "RESINSILVER_SWAN_PAIR.JPG",
+            "RESINSILVER_SWAN_PAIR(1).JPG"
+        ]
+    },
+    {
+        "id": 442,
+        "name": "Resin Silver Luxury Tic-Tac-Toe Game Set",
+        "description": "Opulent tabletop board game crafted with solid silver resin tokens and frame.",
+        "bestSelling": 42,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_TIC_TAC_TOE.JPG",
+        "images": [
+            "RESINSILVER_TIC_TAC_TOE.JPG",
+            "RESINSILVER_TIC_TAC_TOE(1).JPG"
+        ]
+    },
+    {
+        "id": 443,
+        "name": "Resin Silver Tirupati Balaji Sacred Face",
+        "description": "Reverent wall frame displaying the sacred countenance of Lord Tirupati Balaji.",
+        "bestSelling": 43,
+        "category": "Gifting",
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_TIRUPATI_FACE.JPG",
+        "images": [
+            "RESINSILVER_TIRUPATI_FACE.JPG"
+        ]
+    },
+    {
+        "id": 444,
+        "name": "Resin Silver Classic Tulsi Pot",
+        "description": "Traditional sacred Tulsi pot with intricate silver relief patterns.",
+        "bestSelling": 44,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_TULSIPOT.JPG",
+        "images": [
+            "RESINSILVER_TULSIPOT.JPG",
+            "RESINSILVER_TULSIPOT(3).JPG",
+            "RESINSILVER_TULSIPOT(1).JPG",
+            "RESINSILVER_TULSIPOT(2).JPG",
+            "RESINSILVER_TULSIPOT_TOP_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 445,
+        "name": "Resin Silver Decorative Urli Bowl",
+        "description": "Traditional floating flower urli bowl with ornate silver handles and trim.",
+        "bestSelling": 45,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_URLI.JPG",
+        "images": [
+            "RESINSILVER_URLI.JPG",
+            "RESINSILVER_URLI_TOP_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 446,
+        "name": "Resin Silver Classic Vintage Car Miniature",
+        "description": "Nostalgic collectible vintage car model sculpted with precision silver craftsmanship.",
+        "bestSelling": 46,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "RESINSILVER_VINTAGE_CAR.JPG",
+        "images": [
+            "RESINSILVER_VINTAGE_CAR.JPG",
+            "RESINSILVER_VINTAGE_CAR_FRONT_VIEW.JPG",
+            "RESINSILVER_VINTAGE_CAR_SIDE_VIEW(1).JPG",
+            "RESINSILVER_VINTAGE_CAR_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 447,
+        "name": "Resin Silver Wedding Card & Keepsake Photo Frame",
+        "description": "Grand dual-purpose silver frame crafted to preserve wedding invitations and cherished memories.",
+        "bestSelling": 47,
+        "category": "Gifting",
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_WEDDINGCARD_PHOTOFRAME.JPG",
+        "images": [
+            "RESINSILVER_WEDDINGCARD_PHOTOFRAME.JPG",
+            "RESINSILVER_WEDDINGCARD_PHOTOFRAME(3).JPG",
+            "RESINSILVER_WEDDINGCARD_PHOTOFRAME(1).JPG",
+            "RESINSILVER_WEDDINGCARD_PHOTOFRAME(2).JPG",
+            "RESINSILVER_WEDDINGCARD_PHOTOFRAME_SIDE_VIEW(1).JPG",
+            "RESINSILVER_WEDDINGCARD_PHOTOFRAME_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 448,
+        "name": "Resin Silver Heritage Wedding Photo Frame",
+        "description": "Sophisticated silver picture frame designed to highlight memorable wedding moments.",
+        "bestSelling": 48,
+        "category": "Gifting",
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_WEDDING_PHOTOFRAME.JPG",
+        "images": [
+            "RESINSILVER_WEDDING_PHOTOFRAME.JPG",
+            "RESINSILVER_WEDDING_PHOTOFRAME(1).JPG"
+        ]
+    },
+    {
+        "id": 449,
+        "name": "Resin Silver Kamdhenu Cow on Wooden Base",
+        "description": "Sacred Kamdhenu cow sculpture mounted on a rich mahogany-tinted wooden pedestal.",
+        "bestSelling": 49,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "RESINSILVER_WOODENBASE_KAMDHENU.JPG",
+        "images": [
+            "RESINSILVER_WOODENBASE_KAMDHENU.JPG",
+            "RESINSILVER_WOODENBASE_KAMDHENU_FRONT_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 450,
+        "name": "Resin Silver Shubh Labh Wooden Wall Hanging",
+        "description": "Traditional entrance hanging combining warm wood aesthetics with pure silver motifs.",
+        "bestSelling": 50,
+        "category": "Gifting",
+        "type": "Wall & Frame Decor",
+        "image": "RESINSILVER_WOODEN_SUBH_LABH.JPG",
+        "images": [
+            "RESINSILVER_WOODEN_SUBH_LABH.JPG"
+        ]
+    },
+    {
+        "id": 451,
+        "name": "Pure Silver Bird Motif Dry Fruit Serving Box",
+        "description": "Hand-engraved pure silver dry fruit server adorned with charming bird handles.",
+        "bestSelling": 51,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "SILVER_BIRD_DRYFRUIT_BOX.JPG",
+        "images": [
+            "SILVER_BIRD_DRYFRUIT_BOX.JPG",
+            "SILVER_BIRD_DRYFRUIT_BOX(1).JPG",
+            "SILVER_DRYFRUIT_BOX_OPEN.JPG"
+        ]
+    },
+    {
+        "id": 452,
+        "name": "Pure Silver 4-Section Dry Fruit Handi",
+        "description": "Royal 4-quadrant silver serving handi with carved lid for festive dining.",
+        "bestSelling": 52,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "SILVER_FOUR_SECTION_DRYFRUIT_HANDI.JPG",
+        "images": [
+            "SILVER_FOUR_SECTION_DRYFRUIT_HANDI.JPG",
+            "SILVER_FOUR_SECTION_DRYFRUIT_HANDI(1).JPG"
+        ]
+    },
+    {
+        "id": 453,
+        "name": "Pure Silver Heritage Gullak (Coin Bank)",
+        "description": "Traditional solid silver coin savings bank handcrafted with floral engravings.",
+        "bestSelling": 53,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "SILVER_GULLAK.JPG",
+        "images": [
+            "SILVER_GULLAK.JPG",
+            "SILVER_GULLAK1.JPG",
+            "SILVER_GULLAK_FRONT_VIEW.JPG",
+            "SILVER_GULLAK_TOP_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 454,
+        "name": "Pure Silver Sacred Hatthri Pooja Box",
+        "description": "Ceremonial silver hatthri box used for storing sacred items during festive worship.",
+        "bestSelling": 54,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "SILVER_HATTHRI_FRONT_VIEW.JPG",
+        "images": [
+            "SILVER_HATTHRI_FRONT_VIEW.JPG",
+            "SILVER_HATTHRI_TOP_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 455,
+        "name": "Pure Silver Royal Dinner Thali Set",
+        "description": "Exquisite multi-piece pure silver dinner set designed for memorable celebrations.",
+        "bestSelling": 55,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "SILVER_PLAIN_DINNER_SET.JPG",
+        "images": [
+            "SILVER_PLAIN_DINNER_SET.JPG"
+        ]
+    },
+    {
+        "id": 456,
+        "name": "Pure Silver Carved Pooja Thali Set",
+        "description": "Intricately embossed pure silver thali complete with ceremonial bowls and accessories.",
+        "bestSelling": 56,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "SILVER_POOJA_THALI.JPG",
+        "images": [
+            "SILVER_POOJA_THALI.JPG",
+            "SILVER_POOJA_THALI1.JPG"
+        ]
+    },
+    {
+        "id": 457,
+        "name": "Pure Silver Artisanal Clutch Purse",
+        "description": "Statement silver clutch bag handcrafted with delicate filigree lattice work.",
+        "bestSelling": 57,
+        "category": "Gifting",
+        "type": "Home & Desk Decor",
+        "image": "SILVER_PURSE_FRONT_VIEW.JPG",
+        "images": [
+            "SILVER_PURSE_FRONT_VIEW.JPG",
+            "SILVER_PURSE_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 458,
+        "name": "Pure Silver Divine Deity Sinhasan",
+        "description": "Glorious silver throne for home idols embellished with royal umbrella and pillar designs.",
+        "bestSelling": 58,
+        "category": "Gifting",
+        "type": "Pooja & Spiritual",
+        "image": "SILVER_SINHASAN.JPG",
+        "images": [
+            "SILVER_SINHASAN.JPG",
+            "SILVER_SINHASAN_FRONT_VIEW.JPG",
+            "SILVER_SINHASAN_SIDE_VIEW.JPG"
+        ]
+    },
+    {
+        "id": 459,
+        "name": "Pure Silver Royal Surai Water Pitcher",
+        "description": "Timeless silver surai (pitcher) featuring handcrafted neck carvings and sleek silhouette.",
+        "bestSelling": 59,
+        "category": "Gifting",
+        "type": "Utility & Box Sets",
+        "image": "SILVER_SURAI.JPG",
+        "images": [
+            "SILVER_SURAI.JPG",
+            "SILVER_SURAI1.JPG",
+            "SILVER_SURAI2.JPG",
+            "SILVER_SURAI3.JPG"
+        ]
     }
 ]

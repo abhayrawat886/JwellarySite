@@ -16,7 +16,7 @@
 <script setup>
 import whatsappLogo from '../assets/images/wsImage.webp'
 
-const phoneNumber = '918193979086' // your number with country code
+const phoneNumber = '917863010614' // your number with country code
 const message = 'Hello, I am interested in your jewellery collection.'
 
 const whatsAppLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`

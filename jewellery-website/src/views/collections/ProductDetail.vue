@@ -2,25 +2,56 @@
   <div v-if="product" class="product-detail-page">
     <div class="container">
       <div class="detail-grid">
-        <!-- Left Side: Image -->
+        <!-- Left Side: Image Gallery -->
         <div class="image-section">
           <div class="image-container">
             <img 
-              :src="getImageUrl(product.image)" 
+              :src="getImageUrl(currentDisplayImage)" 
               :alt="product.name" 
               class="main-image"
+              loading="eager"
+              decoding="async"
             />
+            <!-- Next / Prev Overlay Buttons for Multi-Image -->
+            <button 
+              v-if="productImages.length > 1" 
+              class="detail-carousel-btn prev" 
+              @click="prevDetailImage"
+              title="Previous Image"
+            >
+              &#10094;
+            </button>
+            <button 
+              v-if="productImages.length > 1" 
+              class="detail-carousel-btn next" 
+              @click="nextDetailImage"
+              title="Next Image"
+            >
+              &#10095;
+            </button>
+          </div>
+
+          <!-- Thumbnails Strip -->
+          <div v-if="productImages.length > 1" class="thumbnail-strip">
+            <div 
+              v-for="(img, index) in productImages" 
+              :key="index"
+              :class="['thumbnail-item', { active: currentImageIndex === index }]"
+              @click="selectDetailImage(index)"
+            >
+              <img :src="getImageUrl(img)" :alt="`${product.name} View ${index + 1}`" loading="lazy" decoding="async" />
+            </div>
           </div>
         </div>
 
         <!-- Right Side: Content -->
         <div class="content-section">
           <nav class="breadcrumb">
-            <router-link to="/">Home</router-link> / <span>{{ product.category }}</span>
+            <router-link to="/">Home</router-link> / <router-link to="/collections">Collections</router-link> / <span>{{ product.category }}</span>
           </nav>
           
           <h1 class="title">{{ product.name }}</h1>
-          <p class="price">{{ product.price }}</p>
+          <p v-if="product.price" class="price">{{ product.price }}</p>
           
           <div class="description-box">
             <h3>Description</h3>
@@ -55,14 +86,14 @@
                   </div>
                 </a>
 
-                <div class="enquiry-item" @click="openEmailModal">
+                <!-- <div class="enquiry-item" @click="openEmailModal">
                   <div class="item-icon email">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                   </div>
                   <div class="item-text">
                     <span class="label">Email Enquiry</span>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -95,17 +126,62 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
+import giftingData from '../../assets/data/gifting.json'
+import goldData from '../../assets/data/gold.json'
+import silverData from '../../assets/data/silver.json'
+import diamondData from '../../assets/data/diamond.json'
+import newArrivalsData from '../../assets/data/newArrivals.json'
 import productsData from '../../assets/products.json'
 import ContactFormModal from '../../components/ContactFormModal.vue'
 
 const route = useRoute()
 const product = ref(null)
-const phoneNumber = '918193979086'
+const phoneNumber = '917863010614'
 const showEnquiry = ref(false)
 const isEmailModalOpen = ref(false)
+const currentImageIndex = ref(0)
+
+const giftingImages = import.meta.glob('../../assets/gifting folder/*.{JPG,jpg,jpeg,png,avif,webp}', { eager: true, import: 'default' })
+const productItemsImages = import.meta.glob('../../assets/productItems/*.{JPG,jpg,jpeg,png,avif,webp}', { eager: true, import: 'default' })
+
+const allProducts = [...giftingData, ...goldData, ...silverData, ...diamondData, ...newArrivalsData, ...productsData]
 
 const getImageUrl = (name) => {
-  return new URL(`../../assets/productItems/${name}`, import.meta.url).href
+  if (!name) return ''
+  const giftingKey = `../../assets/gifting folder/${name}`
+  if (giftingImages[giftingKey]) return giftingImages[giftingKey]
+
+  const productKey = `../../assets/productItems/${name}`
+  if (productItemsImages[productKey]) return productItemsImages[productKey]
+
+  return ''
+}
+
+const productImages = computed(() => {
+  if (!product.value) return []
+  if (product.value.images && product.value.images.length > 0) {
+    return product.value.images
+  }
+  return product.value.image ? [product.value.image] : []
+})
+
+const currentDisplayImage = computed(() => {
+  if (productImages.value.length === 0) return ''
+  return productImages.value[currentImageIndex.value] || productImages.value[0]
+})
+
+const nextDetailImage = () => {
+  if (productImages.value.length <= 1) return
+  currentImageIndex.value = (currentImageIndex.value + 1) % productImages.value.length
+}
+
+const prevDetailImage = () => {
+  if (productImages.value.length <= 1) return
+  currentImageIndex.value = (currentImageIndex.value - 1 + productImages.value.length) % productImages.value.length
+}
+
+const selectDetailImage = (index) => {
+  currentImageIndex.value = index
 }
 
 const toggleEnquiry = () => {
@@ -146,7 +222,8 @@ const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSdNQfttPMmAwN9htwFUKN
 
 onMounted(() => {
   const productId = parseInt(route.params.id)
-  product.value = productsData.find(p => p.id === productId)
+  product.value = allProducts.find(p => p.id === productId)
+  currentImageIndex.value = 0
   
   window.scrollTo({
     top: 0,
@@ -183,10 +260,12 @@ onMounted(() => {
 }
 
 .image-container {
+  position: relative;
   width: 100%;
   aspect-ratio: 1/1;
   background: #f9f9f9;
   border: 1px solid #f0f0f0;
+  border-radius: 16px;
   overflow: hidden;
 
   .main-image {
@@ -197,6 +276,70 @@ onMounted(() => {
 
     &:hover {
       transform: scale(1.05);
+    }
+  }
+
+  .detail-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.85);
+    color: #111;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 5;
+
+    &.prev { left: 1rem; }
+    &.next { right: 1rem; }
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.thumbnail-strip {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+
+  .thumbnail-item {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.25s ease;
+    background: #f5f5f5;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      border-color: rgba(212, 175, 55, 0.5);
+    }
+
+    &.active {
+      border-color: #d4af37;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
     }
   }
 }
@@ -341,7 +484,7 @@ onMounted(() => {
         font-size: 0.85rem;
       }
       .sub-label {
-        display: none; // Hidden for smaller design
+        display: none;
       }
     }
 

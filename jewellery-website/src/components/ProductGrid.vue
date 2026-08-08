@@ -36,15 +36,13 @@
         </div>
       </div>
       
-      <!-- sort by option -->
+      <!-- Sort options -->
       <div class="sort-options">
         <span class="label">SORT BY</span>
         <select v-model="sortBy" class="sort-select">
-          <option value="best-selling">Best Selling</option>
+          <option value="best-selling">Featured</option>
           <option value="az">Alphabetically, A-Z</option>
           <option value="za">Alphabetically, Z-A</option>
-          <option value="low-high">Price, Low to High</option>
-          <option value="high-low">Price, High to Low</option>
         </select>
       </div>
     </div>
@@ -57,20 +55,38 @@
         @click="goToDetail(product.id)"
       >
         <div class="image-wrapper">
-          <img v-if="product.image" :src="getImageUrl(product.image)" :alt="product.name" />
+          <img v-if="getActiveImage(product)" :src="getImageUrl(getActiveImage(product))" :alt="product.name" loading="lazy" decoding="async" />
           <div v-else class="letter-placeholder">
             <span>{{ (product.category || 'P').charAt(0).toUpperCase() }}</span>
           </div>
-          <div class="wishlist-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-            </svg>
+
+          <!-- Carousel Controls for Multi-Image Items -->
+          <div v-if="product.images && product.images.length > 1" class="carousel-controls">
+            <button class="carousel-arrow prev" @click="prevImage(product, $event)" title="Previous Image">
+              &#10094;
+            </button>
+            <button class="carousel-arrow next" @click="nextImage(product, $event)" title="Next Image">
+              &#10095;
+            </button>
+            <div class="carousel-dots">
+              <span 
+                v-for="(img, idx) in product.images" 
+                :key="idx" 
+                :class="['dot', { active: (activeImageMap[product.id] || 0) === idx }]"
+                @click="setImageIndex(product, idx, $event)"
+              ></span>
+            </div>
+          </div>
+
+          <!-- Image Counter Badge -->
+          <div v-if="product.images && product.images.length > 1" class="image-count-badge">
+            {{ (activeImageMap[product.id] || 0) + 1 }} / {{ product.images.length }}
           </div>
         </div>
         <div class="product-info">
           <h3 class="product-name">{{ product.name }}</h3>
           <p class="product-description">{{ product.description }}</p>
-          <p class="product-price">{{ product.price }}</p>
+          <p v-if="product.price" class="product-price">{{ product.price }}</p>
         </div>
       </div>
     </div>
@@ -80,15 +96,53 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import productsData from '../assets/products.json'
+import giftingData from '../assets/data/gifting.json'
 
 const router = useRouter()
-const products = ref(productsData)
+const products = ref(giftingData)
 const currentGrid = ref(4)
 const sortBy = ref('best-selling')
+const activeImageMap = ref({})
+
+const giftingImages = import.meta.glob('../assets/gifting folder/*.{JPG,jpg,jpeg,png,avif,webp}', { eager: true, import: 'default' })
+const productItemsImages = import.meta.glob('../assets/productItems/*.{JPG,jpg,jpeg,png,avif,webp}', { eager: true, import: 'default' })
 
 const getImageUrl = (name) => {
-  return new URL(`../assets/productItems/${name}`, import.meta.url).href
+  if (!name) return ''
+  const giftingKey = `../assets/gifting folder/${name}`
+  if (giftingImages[giftingKey]) return giftingImages[giftingKey]
+
+  const productKey = `../assets/productItems/${name}`
+  if (productItemsImages[productKey]) return productItemsImages[productKey]
+
+  return ''
+}
+
+const getActiveImage = (product) => {
+  if (product.images && product.images.length > 0) {
+    const idx = activeImageMap.value[product.id] || 0
+    return product.images[idx]
+  }
+  return product.image
+}
+
+const nextImage = (product, e) => {
+  e.stopPropagation()
+  if (!product.images || product.images.length <= 1) return
+  const curr = activeImageMap.value[product.id] || 0
+  activeImageMap.value[product.id] = (curr + 1) % product.images.length
+}
+
+const prevImage = (product, e) => {
+  e.stopPropagation()
+  if (!product.images || product.images.length <= 1) return
+  const curr = activeImageMap.value[product.id] || 0
+  activeImageMap.value[product.id] = (curr - 1 + product.images.length) % product.images.length
+}
+
+const setImageIndex = (product, idx, e) => {
+  e.stopPropagation()
+  activeImageMap.value[product.id] = idx
 }
 
 const goToDetail = (id) => {
@@ -107,10 +161,6 @@ const sortedProducts = computed(() => {
       return sorted.sort((a, b) => a.name.localeCompare(b.name))
     case 'za':
       return sorted.sort((a, b) => b.name.localeCompare(a.name))
-    case 'low-high':
-      return sorted.sort((a, b) => a.priceNumeric - b.priceNumeric)
-    case 'high-low':
-      return sorted.sort((a, b) => b.priceNumeric - a.priceNumeric)
     case 'best-selling':
       return sorted.sort((a, b) => a.bestSelling - b.bestSelling)
     default:
@@ -257,13 +307,15 @@ const sortedProducts = computed(() => {
 
   &:hover {
     transform: translateY(-5px);
-    .wishlist-btn { opacity: 1; }
+    .carousel-arrow { opacity: 1; }
   }
 
   .image-wrapper {
     position: relative;
     aspect-ratio: 1/1;
     background: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
     
     img {
       width: 100%;
@@ -285,32 +337,80 @@ const sortedProducts = computed(() => {
       text-transform: uppercase;
     }
 
-    .wishlist-btn {
+    /* Carousel Overlay Controls */
+    .carousel-controls {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 36px;
-      height: 36px;
-      background: white;
-      border-radius: 50%;
+      inset: 0;
+      pointer-events: none;
       display: flex;
       align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      cursor: pointer;
-      opacity: 0;
-      transition: all 0.3s ease;
+      justify-content: space-between;
+      padding: 0 0.5rem;
 
-      svg {
-        width: 18px;
-        height: 18px;
-        color: #666;
+      .carousel-arrow {
+        pointer-events: auto;
+        background: rgba(255, 255, 255, 0.85);
+        color: #111;
+        border: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
       }
 
-      &:hover {
-        background: #f0f0f0;
-        svg { color: #e74c3c; fill: #e74c3c; }
+      .carousel-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 6px;
+        pointer-events: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 4px 8px;
+        border-radius: 12px;
+        backdrop-filter: blur(4px);
+
+        .dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.5);
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          &.active {
+            background: #d4af37;
+            width: 14px;
+            border-radius: 10px;
+          }
+        }
       }
+    }
+
+    .image-count-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
     }
   }
 

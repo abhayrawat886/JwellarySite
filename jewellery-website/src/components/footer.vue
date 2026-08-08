@@ -17,12 +17,12 @@
         </div>
           <p class="brand-slogan">Exquisite Craftsmanship, Timeless Elegance.</p>
           <!-- QR Code Section -->
-          <div class="qr-code-wrapper">
+          <!-- <div class="qr-code-wrapper">
             <p class="qr-title">Scan for Directions</p>
             <div class="qr-image-container">
               <img :src="renuJwellAdress" alt="Store Location QR Code" class="qr-image" />
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- Quick Links -->
