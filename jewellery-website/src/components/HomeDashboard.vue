@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import ProductGrid from './ProductGrid.vue'
+import ProductGrid from './productgrid.vue'
 
 import heroSectionImage from '../assets/images/heroSectionImage.avif'
 </script>

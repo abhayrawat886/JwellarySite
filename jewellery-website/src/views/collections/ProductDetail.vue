@@ -132,7 +132,7 @@ import silverData from '../../assets/data/silver.json'
 import diamondData from '../../assets/data/diamond.json'
 import newArrivalsData from '../../assets/data/newArrivals.json'
 import productsData from '../../assets/products.json'
-import ContactFormModal from '../../components/ContactFormModal.vue'
+import ContactFormModal from '../../components/contactformmodal.vue'
 
 const route = useRoute()
 const product = ref(null)

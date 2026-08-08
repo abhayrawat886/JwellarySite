@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeDashboard from '../components/HomeDashboard.vue'
-import About from '../components/About.vue'
-import ProductDetail from '../views/collections/ProductDetail.vue'
-import Collections from '../views/Collections.vue'
+import HomeDashboard from '../components/homedashboard.vue'
+import About from '../components/about.vue'
+import ProductDetail from '../views/collections/productdetail.vue'
+import Collections from '../views/collections.vue'
 
 const routes = [
     {

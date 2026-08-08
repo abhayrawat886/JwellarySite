@@ -39,8 +39,8 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
-import DesktopNavigation from './DesktopNavigation.vue'
-import MobileNavigation from './MobileNavigation.vue'
+import DesktopNavigation from './desktopnavigation.vue'
+import MobileNavigation from './mobilenavigation.vue'
 
 import logo1 from '../assets/images/level1RJL.png'
 import logo2 from '../assets/images/transparentRJL.png'
